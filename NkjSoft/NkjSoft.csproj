@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA27970B-C1D9-4145-9BD0-A64A3546381C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NkjSoft</RootNamespace>
+    <AssemblyName>NkjSoft</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NkjSoft.XML</DocumentationFile>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\Cache.cs" />
+    <Compile Include="Cache\CacheItemDescriptor.cs" />
+    <Compile Include="Cache\CacheItemPriority.cs" />
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\Interfaces\ICache.cs" />
+    <Compile Include="Common\AppHelper.cs" />
+    <Compile Include="Common\CommonTypes\CommonTypes.cs" />
+    <Compile Include="Common\CommonTypes\PaginatedList.cs" />
+    <Compile Include="Common\IO\ExcelManager.cs" />
+    <Compile Include="Common\IO\WinRar.cs" />
+    <Compile Include="Extensions\AnonymityExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\IO\IOExtensions.cs" />
+    <Compile Include="Extensions\RegularExtensions\RegexPattern.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Common\IO\FileFinder.cs" />
+    <Compile Include="Common\IO\GZip.cs" />
+    <Compile Include="Common\IO\IniFile.cs" />
+    <Compile Include="Common\IO\XmlReaderWriter.cs" />
+    <Compile Include="ORM\AsamblyInfo.cs" />
+    <Compile Include="ORM\BllBase.cs" />
+    <Compile Include="ORM\Core\QueryExtension.cs" />
+    <Compile Include="ORM\Data\EntityBase.cs" />
+    <Compile Include="ORM\Data\IEntity.cs" />
+    <Compile Include="ORM\Data\IQueryLogable.cs" />
+    <Compile Include="ORM\EntityValidation\EntityColumnInfoValidationProvider.cs" />
+    <Compile Include="ORM\QueryProviders\OracleClient\OracleFormatter.cs" />
+    <Compile Include="ORM\QueryProviders\OracleClient\OracleDbProvider.cs" />
+    <Compile Include="ORM\QueryProviders\OracleClient\OracleLanguage.cs" />
+    <Compile Include="Tools\ModelBuilder\GeneratorConfigHelper.cs" />
+    <Compile Include="Tools\ModelBuilder\GeneratorPropertyChangedEventArgs.cs" />
+    <Compile Include="Tools\ModelBuilder\Table.cs" />
+    <Compile Include="Validation\DefaultValidatorMessages.cs" />
+    <Compile Include="Validation\Provider\EntityValidationProvider.cs" />
+    <Compile Include="Validation\EntityValidatorBase.cs" />
+    <Compile Include="Validation\MatchTypeCode.cs" />
+    <Compile Include="Validation\ValidationTypeHelper.cs" />
+    <Compile Include="Validation\Validators\BetweenValueValidator.cs" />
+    <Compile Include="Validation\Validators\MaximizeValidator.cs" />
+    <Compile Include="Validation\Validators\RegexExpressionValidator.cs" />
+    <Compile Include="Validation\Validators\RequireValidator.cs" />
+    <Compile Include="Validation\Validators\TypeValidator.cs" />
+    <Compile Include="ORM\QueryContext.cs" />
+    <Compile Include="ORM\QueryProviders\MySqlClient\MySqlDbProvider.cs" />
+    <Compile Include="ORM\QueryProviders\MySqlClient\MySqlFormatter.cs" />
+    <Compile Include="ORM\QueryProviders\MySqlClient\MySqlLanguage.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Tools\ModelBuilder\BllClassBuilder.cs" />
+    <Compile Include="Tools\CodeTimer.cs" />
+    <Compile Include="Common\DataUtils.cs" />
+    <Compile Include="Common\FastInvoker\DynamicCalls.cs" />
+    <Compile Include="Extensions\Data\DataExtensions.cs" />
+    <Compile Include="Extensions\Data\LinqExtensions.cs" />
+    <Compile Include="Extensions\CommonExtension.cs" />
+    <Compile Include="Extensions\RegularExtensions\RegularExpression.cs" />
+    <Compile Include="Common\FastInvoker\FastCreateInstanceHandler.cs" />
+    <Compile Include="Common\FastInvoker\FastInvokeHandler.cs" />
+    <Compile Include="Common\FastInvoker\FastPropertyGetHandler.cs" />
+    <Compile Include="Common\FastInvoker\FastPropertySetHandler.cs" />
+    <Compile Include="Common\IO\Serializer.cs" />
+    <Compile Include="Common\IO\SerializationManager.cs" />
+    <Compile Include="ORM\Core\ColumnIndeedExpression.cs" />
+    <Compile Include="ORM\Data\Mapping\ImplicitMapping.cs" />
+    <Compile Include="ORM\ProviderFactory.cs" />
+    <Compile Include="ORM\Core\CompoundKey.cs" />
+    <Compile Include="ORM\Core\DeferredList.cs" />
+    <Compile Include="ORM\Core\DeferredValue.cs" />
+    <Compile Include="ORM\Core\EnumerateOnce.cs" />
+    <Compile Include="ORM\Core\ExpressionComparer.cs" />
+    <Compile Include="ORM\Core\ExpressionEvaluator.cs" />
+    <Compile Include="ORM\Core\ExpressionExtensions.cs" />
+    <Compile Include="ORM\Core\ExpressionReplacer.cs" />
+    <Compile Include="ORM\Core\ExpressionVisitor.cs" />
+    <Compile Include="ORM\Core\ExpressionWriter.cs" />
+    <Compile Include="ORM\Core\Grouping.cs" />
+    <Compile Include="ORM\Core\IEntityProvider.cs" />
+    <Compile Include="ORM\Core\IEntitySession.cs" />
+    <Compile Include="ORM\Core\MostRecentlyUsedCache.cs" />
+    <Compile Include="ORM\Core\PartialEvaluator.cs" />
+    <Compile Include="ORM\Core\Query.cs" />
+    <Compile Include="ORM\Core\QueryCache.cs" />
+    <Compile Include="ORM\Core\QueryCompiler.cs" />
+    <Compile Include="ORM\Core\QueryProvider.cs" />
+    <Compile Include="ORM\Core\ReadOnlyExtensions.cs" />
+    <Compile Include="ORM\Core\ReflectionExtensions.cs" />
+    <Compile Include="ORM\Core\ScopedDictionary.cs" />
+    <Compile Include="ORM\Core\StrongDelegate.cs" />
+    <Compile Include="ORM\Core\TopologicalSort.cs" />
+    <Compile Include="ORM\Core\TypedSubtreeFinder.cs" />
+    <Compile Include="ORM\Core\TypeHelper.cs" />
+    <Compile Include="ORM\Core\Updatable.cs" />
+    <Compile Include="ORM\Data\Common\ExecutionBuilder.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\Aggregator.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\DbExpressionComparer.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\DbExpressionExtensions.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\DbExpressionReplacer.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\DbExpressions.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\DbExpressionVisitor.cs" />
+    <Compile Include="ORM\Data\Common\Expressions\DbExpressionWriter.cs" />
+    <Compile Include="ORM\Data\Common\FieldReader.cs" />
+    <Compile Include="ORM\Data\Common\Language\QueryLanguage.cs" />
+    <Compile Include="ORM\Data\Common\Language\QueryTypeSystem.cs" />
+    <Compile Include="ORM\Data\Common\Language\SqlFormatter.cs" />
+    <Compile Include="ORM\Data\Common\Mapping\AdvancedMapping.cs" />
+    <Compile Include="ORM\Data\Common\Mapping\BasicMapping.cs" />
+    <Compile Include="ORM\Data\Common\Mapping\QueryMapping.cs" />
+    <Compile Include="ORM\Data\Common\QueryCommand.cs" />
+    <Compile Include="ORM\Data\Common\QueryExecutor.cs" />
+    <Compile Include="ORM\Data\Common\QueryPolicy.cs" />
+    <Compile Include="ORM\Data\Common\QueryTranslator.cs" />
+    <Compile Include="ORM\Data\Common\Translation\AggregateChecker.cs" />
+    <Compile Include="ORM\Data\Common\Translation\AggregateRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\ClientJoinedProjectionRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\ColumnMapper.cs" />
+    <Compile Include="ORM\Data\Common\Translation\ColumnProjector.cs" />
+    <Compile Include="ORM\Data\Common\Translation\ComparisonRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\CrossApplyRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\CrossJoinIsolator.cs" />
+    <Compile Include="ORM\Data\Common\Translation\CrossJoinRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\DeclaredAliasGatherer.cs" />
+    <Compile Include="ORM\Data\Common\Translation\NamedValueGatherer.cs" />
+    <Compile Include="ORM\Data\Common\Translation\OrderByRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\Parameterizer.cs" />
+    <Compile Include="ORM\Data\Common\Translation\QueryBinder.cs" />
+    <Compile Include="ORM\Data\Common\Translation\QueryDuplicator.cs" />
+    <Compile Include="ORM\Data\Common\Translation\RedundantColumnRemover.cs" />
+    <Compile Include="ORM\Data\Common\Translation\RedundantJoinRemover.cs" />
+    <Compile Include="ORM\Data\Common\Translation\RedundantSubqueryRemover.cs" />
+    <Compile Include="ORM\Data\Common\Translation\ReferencedAliasGatherer.cs" />
+    <Compile Include="ORM\Data\Common\Translation\ReferencedColumnGatherer.cs" />
+    <Compile Include="ORM\Data\Common\Translation\RelationshipBinder.cs" />
+    <Compile Include="ORM\Data\Common\Translation\RelationshipIncluder.cs" />
+    <Compile Include="ORM\Data\Common\Translation\SelectGatherer.cs" />
+    <Compile Include="ORM\Data\Common\Translation\SingletonProjectionRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\SkipToNestedOrderByRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\SkipToRowNumberRewriter.cs" />
+    <Compile Include="ORM\Data\Common\Translation\SubqueryRemover.cs" />
+    <Compile Include="ORM\Data\Common\Translation\UnusedColumnRemover.cs" />
+    <Compile Include="ORM\Data\DbEntityProvider.cs" />
+    <Compile Include="ORM\Data\DbTypeSystem.cs" />
+    <Compile Include="ORM\Data\EntityPolicy.cs" />
+    <Compile Include="ORM\Data\EntityProvider.cs" />
+    <Compile Include="ORM\Data\EntitySession.cs" />
+    <Compile Include="ORM\Data\Mapping\AttributeMapping.cs" />
+    <Compile Include="ORM\QueryProviders\Access\AccessFormatter.cs" />
+    <Compile Include="ORM\QueryProviders\Access\AccessLanguage.cs" />
+    <Compile Include="ORM\QueryProviders\Access\OleDbProvider.cs" />
+    <Compile Include="ORM\QueryProviders\Access\AccessTypeSystem.cs" />
+    <Compile Include="ORM\QueryProviders\Access\OleDbQueryProvider.cs" />
+    <Compile Include="ORM\QueryProviders\SqlClient\SqlDbProvider.cs" />
+    <Compile Include="ORM\QueryProviders\SqlClient\TSqlFormatter.cs" />
+    <Compile Include="ORM\QueryProviders\SqlClient\TSqlLanguage.cs" />
+    <Compile Include="ORM\QueryProviders\SQLite\SQLiteFormatter.cs" />
+    <Compile Include="ORM\QueryProviders\SQLite\SQLiteLanguage.cs" />
+    <Compile Include="ORM\QueryProviders\SQLite\SQLiteDbProvider.cs" />
+    <Compile Include="ORM\QueryProviders\SQLite\SQLiteTypeSystem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ModelBuilder\DataBaseImpl\AccessDataBaseServer.cs" />
+    <Compile Include="Tools\ModelBuilder\Factory.cs" />
+    <Compile Include="Tools\ModelBuilder\DataBaseImpl\SqlDataBaseServer.cs" />
+    <Compile Include="Tools\ModelBuilder\DbHelpers\AccessDBHelper.cs" />
+    <Compile Include="Tools\ModelBuilder\DbHelpers\SqlHelper.cs" />
+    <Compile Include="Tools\ModelBuilder\Column.cs" />
+    <Compile Include="Tools\ModelBuilder\DataBaseServer.cs" />
+    <Compile Include="Tools\ModelBuilder\DataBaseService.cs" />
+    <Compile Include="Tools\ModelBuilder\Generator.cs" />
+    <Compile Include="Tools\ModelBuilder\IDataBaseService.cs" />
+    <Compile Include="Tools\ModelBuilder\Templates.cs" />
+    <Compile Include="Utility\Errors.cs" />
+    <Compile Include="Utility\ExceptionBlock.cs" />
+    <Compile Include="Utility\JSON\JsonTable.cs" />
+    <Compile Include="Utility\SecurityProtector.cs" />
+    <Compile Include="Utility\WorkQueue.cs" />
+    <Compile Include="Validation\IValidationProvider.cs" />
+    <Compile Include="WCF\ClientServiceBase.cs" />
+    <Compile Include="WCF\NkjSoftWCFClientBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NkjSoft.Common.DataUtils" Collapsed="true">
+    <Position X="87.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAJCBAAAAEEQAAEAAAAAIhA=</HashCode>
+      <FileName>Common\DataUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Common.DynamicCalls" Collapsed="true">
+    <Position X="96" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAQCIAAAAAQAAAAAAAAAAAABAAAEQEAAA=</HashCode>
+      <FileName>Common\FastInvoker\DynamicCalls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Extensions.CommonExtension" Collapsed="true">
+    <Position X="96" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAKEAAAACIQEAAAAAAAAAAQIAAAAAJyALAgQAAE=</HashCode>
+      <FileName>Common\Extensions\CommonExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Extensions.Data.DataExtensions" Collapsed="true">
+    <Position X="85.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACAAAAAAIAAAAAAAAAAAAAAEAAAAAAAgABAAAAAA=</HashCode>
+      <FileName>Common\Extensions\Data\DataExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Extensions.Data.Linq.ExtensionForDataLinq" Collapsed="true">
+    <Position X="94.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Extensions\Data\LinqExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Extensions.RegularExpExtensions.RegExpression" Collapsed="true">
+    <Position X="92.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAIAAAAAACBAAAIAAAAAAAAIAAQAAAAAAAAA=</HashCode>
+      <FileName>Common\Extensions\RegularExtensions\RegularExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Extensions.Web.MessageBox" Collapsed="true">
+    <Position X="89" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAABAACAAAAFAAAEAAAAAAAAQAAAAgA=</HashCode>
+      <FileName>Common\Extensions\Web\Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Common.IO.SerializationManager" Collapsed="true">
+    <Position X="97.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAQAAAlAEgKAAABQDBIAABGQAAIAAABAAA=</HashCode>
+      <FileName>Common\IO\SerializationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Common.IO.Serializer" Collapsed="true">
+    <Position X="85.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAACBAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Common\IO\Serializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ColumnIndeedExpression" Collapsed="true">
+    <Position X="54.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\ColumnIndeedExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ColumnsIndeed" Collapsed="true">
+    <Position X="94.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\ColumnIndeedExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.CompoundKey" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="97.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAABAAgAAAAAAAAAAAAKAEAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\CompoundKey.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.DeferredList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="94.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAgEgAAICAABIYCAAAFAQgAAAAACAECAAAAABQIAA=</HashCode>
+      <FileName>ORM\Core\DeferredList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.EnumerateOnce&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="85.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAIAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\EnumerateOnce.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ExpressionComparer" Collapsed="true">
+    <Position X="18.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAoAAAAAAAAAAABICokUEADAARAgABMAAEFAAAAYAAA=</HashCode>
+      <FileName>ORM\Core\ExpressionComparer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ExpressionExtensions" Collapsed="true">
+    <Position X="92.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAEAAAAAAAAAiAgAAAAAAAAAAAAAAwAAAAAQRAACA=</HashCode>
+      <FileName>ORM\Core\ExpressionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ExpressionReplacer" Collapsed="true">
+    <Position X="80.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAEAAEAACA=</HashCode>
+      <FileName>ORM\Core\ExpressionReplacer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ExpressionVisitor" Collapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEDQBECAAAYwhAQAAAgAISDAIAAEIiICAHBIAAhERJA=</HashCode>
+      <FileName>ORM\Core\ExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ExpressionWriter" Collapsed="true">
+    <Position X="83" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEEABAKAAAY0hAAIFAAAIaCAAAAEIgACAVAAIAkEQAA=</HashCode>
+      <FileName>ORM\Core\ExpressionWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.Grouping&lt;TKey, TElement&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="97.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAABQAAAAEAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\Grouping.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.SessionTableExtensions" Collapsed="true">
+    <Position X="87.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIACIAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\IEntitySession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.MostRecentlyUsedCache&lt;T&gt;" Collapsed="true">
+    <Position X="90.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAAAAAAAACAAIAQAAAACAAAAAAAAAABAAIA=</HashCode>
+      <FileName>ORM\Core\MostRecentlyUsedCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.PartialEvaluator" Collapsed="true">
+    <Position X="94.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\PartialEvaluator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.Query&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="85.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAQAAAAEABAEAAAAAQAAABAAAAAUAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\Query.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.QueryCache" Collapsed="true">
+    <Position X="87.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAQAAgAAAQABAAAAAQAAAAIAAAAAAKAAABQAAA=</HashCode>
+      <FileName>ORM\Core\QueryCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.QueryCompiler" Collapsed="true">
+    <Position X="90.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ORM\Core\QueryCompiler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.QueryExtension" Collapsed="true">
+    <Position X="94.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\QueryExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.QueryProvider" Collapsed="true">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAQQAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\QueryProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ReadOnlyExtensions" Collapsed="true">
+    <Position X="89" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\ReadOnlyExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ReflectionExtensions" Collapsed="true">
+    <Position X="90.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\ReflectionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.ScopedDictionary&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="94.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAEAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\ScopedDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.StrongDelegate" Collapsed="true">
+    <Position X="89" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>ORM\Core\StrongDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.TopologicalSorter" Collapsed="true">
+    <Position X="92.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\TopologicalSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.TypedSubtreeFinder" Collapsed="true">
+    <Position X="78.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAgAAAAAAAJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\TypedSubtreeFinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.TypeHelper" Collapsed="true">
+    <Position X="94.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAAAAAAQAAAAQgAAAAAAIAAQAAAAkAAAAAQCQAAA=</HashCode>
+      <FileName>ORM\Core\TypeHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Core.Updatable" Collapsed="true">
+    <Position X="96" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAEAQAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\Updatable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ExecutionBuilder" Collapsed="true">
+    <Position X="67.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQggQIkAwAAgFAAQAkEABDAAAAoEgABAKEIQMEA2o=</HashCode>
+      <FileName>ORM\Data\Common\ExecutionBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.Aggregator" Collapsed="true">
+    <Position X="85.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\Aggregator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpressionComparer" Collapsed="true">
+    <Position X="18.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAFiIAAACAEoIAAABAAAABAEEAAAAEYFAJAAkTAAII=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressionComparer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpressionExtensions" Collapsed="true">
+    <Position X="89" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAQgAAEAAKABQAACQAACABFAAAIAAABACABAAAgAE=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpressionReplacer" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAEAAEAACA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressionReplacer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpressionTypeExtensions" Collapsed="true">
+    <Position X="90.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpression" Collapsed="true">
+    <Position X="30" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AliasedExpression" Collapsed="true">
+    <Position X="35.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.TableExpression" Collapsed="true">
+    <Position X="36.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.EntityExpression" Collapsed="true">
+    <Position X="39" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ColumnExpression" Collapsed="true">
+    <Position X="43.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAIQAAAEkAAAAAQAAAAEAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.TableAlias" Collapsed="true">
+    <Position X="90.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ColumnDeclaration" Collapsed="true">
+    <Position X="92.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAQAABAEAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.OrderExpression" Collapsed="true">
+    <Position X="92.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAIAABAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SelectExpression" Collapsed="true">
+    <Position X="34.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoACAAKAAAAAgAAAAAAAAQAAAAFAAAIACAEQAAiBEgA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.JoinExpression" Collapsed="true">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAAAACAAAgAAAAAAAAAAAAIAAAACACAAAAAgAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.OuterJoinedExpression" Collapsed="true">
+    <Position X="9.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAYAAAACAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SubqueryExpression" Collapsed="true">
+    <Position X="16.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ScalarExpression" Collapsed="true">
+    <Position X="14.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ExistsExpression" Collapsed="true">
+    <Position X="16.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.InExpression" Collapsed="true">
+    <Position X="18.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAACAQAAAgAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AggregateExpression" Collapsed="true">
+    <Position X="41.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAABAAAAAAAAAAAAAAgAAAAIAAAAAAEAgA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AggregateSubqueryExpression" Collapsed="true">
+    <Position X="45.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAQAAQAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.IsNullExpression" Collapsed="true">
+    <Position X="48" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.BetweenExpression" Collapsed="true">
+    <Position X="50.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAAAAAAAABABAAAQAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.RowNumberExpression" Collapsed="true">
+    <Position X="52.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.NamedValueExpression" Collapsed="true">
+    <Position X="57" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAQAAAAEACAAAAAgAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ProjectionExpression" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAEAAAAAQAAAAAAAABIAAAAQAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ClientJoinExpression" Collapsed="true">
+    <Position X="5.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAAAAEAAAAAAAAACAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.BatchExpression" Collapsed="true">
+    <Position X="87.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAIAAAAAAAEAAIABAACAEAAAABAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.FunctionExpression" Collapsed="true">
+    <Position X="12" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAkAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.CommandExpression" Collapsed="true">
+    <Position X="26.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.InsertCommand" Collapsed="true">
+    <Position X="21" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ColumnAssignment" Collapsed="true">
+    <Position X="90.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAQBAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.UpdateCommand" Collapsed="true">
+    <Position X="23.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAABAAAAAQQAAAAEAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DeleteCommand" Collapsed="true">
+    <Position X="25.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.IFCommand" Collapsed="true">
+    <Position X="27.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.BlockCommand" Collapsed="true">
+    <Position X="30" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DeclarationCommand" Collapsed="true">
+    <Position X="32.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAQAAAAEAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.VariableDeclaration" Collapsed="true">
+    <Position X="97.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAQAABAFAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.VariableExpression" Collapsed="true">
+    <Position X="85.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpressionVisitor" Collapsed="true">
+    <Position X="40.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sQQAgAodEWwQQicAQQIAEAQRAAADoAIqgABBIgAAB0k=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DbExpressionWriter" Collapsed="true">
+    <Position X="83" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAARQAg0AEAAAAQABAAAAIEEAgAAAAAEAAgg=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressionWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.FieldReader" Collapsed="true">
+    <Position X="96" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAgBEAUiJgiQJEACAAAAjAIAAAQGK0QQIkQCEAAAIkw=</HashCode>
+      <FileName>ORM\Data\Common\FieldReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryLanguage" Collapsed="true">
+    <Position X="3" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAAAAgQAAGCCAAAAAgAAgAAAJAAAAAAAQAgCAAA=</HashCode>
+      <FileName>ORM\Data\Common\Language\QueryLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryLinguist" Collapsed="true">
+    <Position X="96" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAgAAAAAEAAAABgAAAAAAACEAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Language\QueryLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryType" Collapsed="true">
+    <Position X="5.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAABAAEAA=</HashCode>
+      <FileName>ORM\Data\Common\Language\QueryTypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryTypeSystem" Collapsed="true">
+    <Position X="9.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Language\QueryTypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SqlFormatter" Collapsed="true">
+    <Position X="38" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QaRIggIYGRx0BC9OBSABESQxEQhAICBigBQAMQmAQQA=</HashCode>
+      <FileName>ORM\Data\Common\Language\SqlFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.MappingTable" Collapsed="true">
+    <Position X="87.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\AdvancedMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AdvancedMapping" Collapsed="true">
+    <Position X="13.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAABBAAAIAACAAAIAAAAAEEAAAgAQAI=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\AdvancedMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AdvancedMapper" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAgAAQAAABQAAEIBAAAAAAEAAAIgQACAAIAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\AdvancedMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.BasicMapping" Collapsed="true">
+    <Position X="14.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAIRCAAAIQBCAIBIABKAFAAAACAgAEAAAACRoA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\BasicMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.BasicMapper" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAABYABAABAAAACQAAEABCABAAAEAAAAoYADBAJAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\BasicMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.MappingEntity" Collapsed="true">
+    <Position X="85.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\QueryMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryMapping" Collapsed="true">
+    <Position X="14.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAQAADAAIBIAAKABAAIACAAAAAAAACQIA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\QueryMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryMapper" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAAYAAAABAAAAAAAAEAAAABAAAEAAAAgUAAAAIAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\QueryMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryCommand" Collapsed="true">
+    <Position X="89" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>ORM\Data\Common\QueryCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryParameter" Collapsed="true">
+    <Position X="97.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAQAAAAFAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\QueryCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryExecutor" Collapsed="true">
+    <Position X="92.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgABAAAAAAAwAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\QueryExecutor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryPolicy" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAIQAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\QueryPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryPolice" Collapsed="true">
+    <Position X="85.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAkAACABAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\QueryPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryTranslator" Collapsed="true">
+    <Position X="87.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAIAAAACAIAAAACAAAAAAAAAAAEAAAAAEA=</HashCode>
+      <FileName>ORM\Data\Common\QueryTranslator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AggregateChecker" Collapsed="true">
+    <Position X="60.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAEAQAAAAAAAAAAAAAAAAAAAgAAAAAEAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\AggregateChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.AggregateRewriter" Collapsed="true">
+    <Position X="69.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAACAAQAAgAAAIAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\AggregateRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ClientJoinedProjectionRewriter" Collapsed="true">
+    <Position X="74" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQkCICEAAAAiAABAAAAACIAgAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ClientJoinedProjectionRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ColumnMapper" Collapsed="true">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABQAAAAAgAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ColumnMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ProjectedColumns" Collapsed="true">
+    <Position X="96" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ColumnProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ColumnProjector" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAwAAIAIAAAAABACABgECCACAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ColumnProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ComparisonRewriter" Collapsed="true">
+    <Position X="17.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAgACAAAAAAAAQAAACAAAAAAAAAAABBAAAAAAAE=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ComparisonRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.CrossApplyRewriter" Collapsed="true">
+    <Position X="22.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\CrossApplyRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.CrossJoinIsolator" Collapsed="true">
+    <Position X="26.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAQQACAAAAAQAAAAAAAAAAAACEAAAQAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\CrossJoinIsolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.CrossJoinRewriter" Collapsed="true">
+    <Position X="31.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAACAAQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\CrossJoinRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.DeclaredAliasGatherer" Collapsed="true">
+    <Position X="42.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAQAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\DeclaredAliasGatherer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.NamedValueGatherer" Collapsed="true">
+    <Position X="47" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\NamedValueGatherer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.OrderByRewriter" Collapsed="true">
+    <Position X="51.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAACEAQAAgAAAAAAAAAAAAAAAAAAAAAAACCAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\OrderByRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.Parameterizer" Collapsed="true">
+    <Position X="56" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEEAMAAAQAAgAAAAAQQAAAAAAAAAAABCAAAoAQAg=</HashCode>
+      <FileName>ORM\Data\Common\Translation\Parameterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryBinder" Collapsed="true">
+    <Position X="62.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCAIkMgAMBC4BwwAoIAgCSQAgBAFAAQgAAgoAJpDRWA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\QueryBinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.QueryDuplicator" Collapsed="true">
+    <Position X="71.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAQQAAAAAQAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\QueryDuplicator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.RedundantColumnRemover" Collapsed="true">
+    <Position X="76.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAQQAAAAAAAABAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\RedundantColumnRemover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.RedundantJoinRemover" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\RedundantJoinRemover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.RedundantSubqueryRemover" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAQACAAAAAABAABAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\RedundantSubqueryRemover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ReferencedAliasGatherer" Collapsed="true">
+    <Position X="15.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ReferencedAliasGatherer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.ReferencedColumnGatherer" Collapsed="true">
+    <Position X="20" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQQAAAAAAEAAAAAAAAAAAIACAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\ReferencedColumnGatherer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.RelationshipBinder" Collapsed="true">
+    <Position X="24.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAA4AAgAAQAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\RelationshipBinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.RelationshipIncluder" Collapsed="true">
+    <Position X="29" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAIAgAAAAAACCACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\RelationshipIncluder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SelectGatherer" Collapsed="true">
+    <Position X="33.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\SelectGatherer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SingletonProjectionRewriter" Collapsed="true">
+    <Position X="44.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkAICEAAAAgAAAAAACAAAAAAIAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ORM\Data\Common\Translation\SingletonProjectionRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SkipToNestedOrderByRewriter" Collapsed="true">
+    <Position X="49.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\SkipToNestedOrderByRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SkipToRowNumberRewriter" Collapsed="true">
+    <Position X="53.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\SkipToRowNumberRewriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.SubqueryRemover" Collapsed="true">
+    <Position X="58.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACAAAQQAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\SubqueryRemover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Common.UnusedColumnRemover" Collapsed="true">
+    <Position X="65" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAIAEQQAAAEAAAABAAABAAAIAAkAAAAAAAAAQA=</HashCode>
+      <FileName>ORM\Data\Common\Translation\UnusedColumnRemover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.DbEntityProvider" Collapsed="true">
+    <Position X="3" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IoTAAAAAAAAAACEEAAABBAAAAACAAAAAAgAAAAIAgCA=</HashCode>
+      <FileName>ORM\Data\DbEntityProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.DbTypeSystem" Collapsed="true">
+    <Position X="9.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAEAAAgAgAEAAAIAABAAAAAAAAABAAAQAAAAAAA=</HashCode>
+      <FileName>ORM\Data\DbTypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.DbQueryType" Collapsed="true">
+    <Position X="5.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEIAABBCIAAAACAAAACQABAAEAA=</HashCode>
+      <FileName>ORM\Data\DbTypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.EntityPolicy" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEYBAAAgAAAAACCQAAAEIAAAAAAAIAIAAAAAA=</HashCode>
+      <FileName>ORM\Data\EntityPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.EntityProvider" Collapsed="true">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="NkjSoft.ORM.Data.EntityProvider.EntityTable&lt;T&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ORM\Data\EntityProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="NkjSoft.ORM.Data.EntityProvider.CommandGatherer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ORM\Data\EntityProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IOgAgAAgCQABAQxABQIELAACABgIIAAAAwAgAgAAALA=</HashCode>
+      <FileName>ORM\Data\EntityProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.EntitySession" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="97.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAQQAAAgEAABABAAsAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\EntitySession.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.MappingAttribute" Collapsed="true">
+    <Position X="12" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.TableBaseAttribute" Collapsed="true">
+    <Position X="9.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.TableAttribute" Collapsed="true">
+    <Position X="8.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.ExtensionTableAttribute" Collapsed="true">
+    <Position X="11" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAIAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.MemberAttribute" Collapsed="true">
+    <Position X="14.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.ColumnAttribute" Collapsed="true">
+    <Position X="13.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAAAAAAAAQAABIAACAAAAAAAAAAAgA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.AssociationAttribute" Collapsed="true">
+    <Position X="15.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAACAAAAQAAQAAAAAAAAgAAAAEAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.AttributeMapping" Collapsed="true">
+    <Position X="13.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAIRDCAQIQADCABIABAQNCIARAAgkEAAAgDAgI=</HashCode>
+      <FileName>ORM\Data\Mapping\AttributeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.ImplicitMapping" Collapsed="true">
+    <Position X="15.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAIRAAAQAACDAAAAICAAFQAABAAAAEAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\ImplicitMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Mapping.XmlMapping" Collapsed="true">
+    <Position X="13.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAABEAAAAAAAAAAACAAAAAAQAAACAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Mapping\XmlMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.DbSession" Collapsed="true">
+    <Position X="92.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQCAAAAAAAAAAACAAAAIACAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\DbSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.ProviderFactory" Collapsed="true">
+    <Position X="97.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAIAAoAQAAAAAAAAAgACIAACAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ORM\ProviderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Access.AccessFormatter" Collapsed="true">
+    <Position X="35.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAEwBAIAAAAAECAQEQgAAAAAABAAAQgAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\Access\AccessFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Access.AccessLanguage" Collapsed="true">
+    <Position X="0.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAAgAAAAIAAAAAIAAAgAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\Access\AccessLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Access.AccessTypeSystem" Collapsed="true">
+    <Position X="10.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAgAgAAAAAAAABAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\Access\AccessTypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.Access.OleDbProvider" Collapsed="true">
+    <Position X="0.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAAAAABAgAAAAAAAAAADAAAAAAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\Access\OleDbProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.OleDb.OleDbQueryProvider" Collapsed="true">
+    <Position X="0.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ORM\QueryProviders\Access\OleDbQueryProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SqlClient.SqlDbProvider" Collapsed="true">
+    <Position X="3" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAABAgAAAABAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\SqlClient\SqlDbProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SqlClient.TSqlFormatter" Collapsed="true">
+    <Position X="38" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAgBCAAAAAAECAgAAgAAABAABAAAAgAAQA=</HashCode>
+      <FileName>ORM\QueryProviders\SqlClient\TSqlFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SqlClient.TSqlLanguage" Collapsed="true">
+    <Position X="3" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgABAAAgAAAEIAAAAAIgAAgAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>ORM\QueryProviders\SqlClient\TSqlLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SQLite.SQLiteDbProvider" Collapsed="true">
+    <Position X="5.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAABAgAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\SQLiteClient\SQLiteDbProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SQLite.SQLiteFormatter" Collapsed="true">
+    <Position X="40.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAwBAAAAAAAACAQAAgAAABAABAAAAgAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\SQLiteClient\SQLiteFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SQLite.SQLiteLanguage" Collapsed="true">
+    <Position X="5.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgABAAAgEAAACAAAAAIAAAgAAABAAAAAAAAAgAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\SQLiteClient\SQLiteLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.ORM.Data.SQLite.SQLiteTypeSystem" Collapsed="true">
+    <Position X="8.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\QueryProviders\SQLiteClient\SQLiteTypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Tools.CodeTimer" Collapsed="true">
+    <Position X="89" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAUAAAgAAAAAAAAAAAAAAAAAAKAAAAAA=</HashCode>
+      <FileName>Tools\CodeTimers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Utility.Errors" Collapsed="true">
+    <Position X="87.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Utility\Errors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Utility.SecurityProtector" Collapsed="true">
+    <Position X="96" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAIIIAAAAAAAAAAQAAACAAAAAAAIAAA=</HashCode>
+      <FileName>Utility\SecurityProtector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Utility.ExceptionBlock.ExceptionPolice" Collapsed="true">
+    <Position X="90.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAgAAAAI=</HashCode>
+      <FileName>Utility\ExceptionBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NkjSoft.Utility.ExceptionBlock.ExceptionEventArgs" Collapsed="true">
+    <Position X="89" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Utility\ExceptionBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="NkjSoft.ORM.Core.DeferredValue&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="85.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAAAAAIAIJAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>ORM\Core\DeferredValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="NkjSoft.ORM.Data.Common.EntityInfo" Collapsed="true">
+    <Position X="87.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAQAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\QueryMapping.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="NkjSoft.ORM.Core.IDeferLoadable" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\DeferredList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IDeferredList" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\DeferredList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IDeferredList&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\DeferredList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IEntityProvider" Collapsed="true">
+    <Position X="87.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ORM\Core\IEntityProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IEntityTable" Collapsed="true">
+    <Position X="8.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAQAAAEAAAAAAAAAAQAAAEAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ORM\Core\IEntityProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IEntityTable&lt;T&gt;" Collapsed="true">
+    <Position X="9.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAQAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ORM\Core\IEntityProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IEntitySession" Collapsed="true">
+    <Position X="89" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\IEntitySession.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.ISessionTable" Collapsed="true">
+    <Position X="18.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAABAAAAAAEAEAAAAAAAAIA=</HashCode>
+      <FileName>ORM\Core\IEntitySession.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.ISessionTable&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAEAEAAAAAAAAIA=</HashCode>
+      <FileName>ORM\Core\IEntitySession.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IQueryText" Collapsed="true">
+    <Position X="92.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\Query.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IUpdatable" Collapsed="true">
+    <Position X="9.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\Updatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Core.IUpdatable&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Core\Updatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Data.Common.IHaveMappingEntity" Collapsed="true">
+    <Position X="90.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Mapping\QueryMapping.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NkjSoft.ORM.Data.Common.ICreateExecutor" Collapsed="true">
+    <Position X="85.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\QueryExecutor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="NkjSoft.ORM.Core.SubmitAction" Collapsed="true">
+    <Position X="92.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAQAgAAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ORM\Core\IEntitySession.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NkjSoft.ORM.Data.Common.DbExpressionType" Collapsed="true">
+    <Position X="85.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WYQEAuAEQAgAAAgAAABAQAIAAQEAAAAIAAQAQAEQgiA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NkjSoft.ORM.Data.Common.OrderType" Collapsed="true">
+    <Position X="89" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NkjSoft.ORM.Data.Common.JoinType" Collapsed="true">
+    <Position X="87.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACEAAAAAAAAIAAQAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Data\Common\Expressions\DbExpressions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NkjSoft.ORM.ProviderTypes" Collapsed="true">
+    <Position X="90.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAABAAAACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ORM\ProviderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="NkjSoft.Common.FastCreateInstanceHandler" Collapsed="true">
+    <Position X="85.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\FastInvoker\FastCreateInstanceHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NkjSoft.Common.FastInvokeHandler" Collapsed="true">
+    <Position X="87.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\FastInvoker\FastInvokeHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NkjSoft.Common.FastPropertyGetHandler" Collapsed="true">
+    <Position X="89" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\FastInvoker\FastPropertyGetHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NkjSoft.Common.FastPropertySetHandler" Collapsed="true">
+    <Position X="90.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Common\FastInvoker\FastPropertySetHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

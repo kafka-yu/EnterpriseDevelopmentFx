@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssamblyInfo" xml:space="preserve">
+    <value>版本4.6.0.0:[2010-12-23 22:07:19]
+    1. 更新实体生成器(更新到版本(v5.1.3.22),增加对Oracle 的支持(beta),增加对web/app config 的生成;
+    2. 
+版本4.5.3.30:[2010-12-19 17:28:20]
+    1,完善实体验证器,扩展 EntityBase(为完成,慎用);
+    2,改进实体生成模块(核心库升级到v4.0,生成器升级到v5.0,设计新的UI界面);
+    3. 简化 ColumnAttribute 类,在标记实体的时候,使用简洁的构造函数来初始化. 
+    ===---ORM组件---====
+     1. ProviderFactory 工厂中,实现一个From()方法,方法接收数据库类型(ProviderType)和一个连接字符串(string)进行实例化 DbEntityProvider 的工作,设置一个bool 参数      (cacheTheProvider),--增加一个重载;
+     2. DataContext 增加一个构造函数重载,方法接收数据库类型(ProviderType)和一个连接字符串(string)进行实例化 DbEntityProvider 的工作,设置一个bool 参数(cacheTheProvider),--增加一个重载;
+     3. 将 IgnoreAttribute 移除,在ColumnAttribute中添加一个属性(Ignore[bool]),指示被标记的成员是否是参与数据库表的隐射成员;
+     4. 允许 BllBase&lt;T&gt; 子类可以被实例化(并包含新的 DataContext,也可以是当前其他的引用);
+
+版本4.3.3.30:[2010-12-04 1:43:20]
+    1,添加实体验证器,扩展 EntityBase;
+    
+
+版本4.2.3.30:[2010-11-26 13:12:43]
+    1,过滤不需要进行 Insert or Update or Select 的属性成员,即指定 Colunmn(Igmore=true);
+    2,改进实体生成器;
+
+版本4.0.3.30:[2010-8-23 1:43:20]
+    1,重新设计生成实体的特性属性,使其更简洁;
+    2,添加属性值更新自动检测特性;(从数据库查询的实体将不会进行检测;使用实体的SetInsertOrUpdateNotify方法开关检测功能;
+    3,添加实体类型对CLR枚举类型的支持,可以直接使用枚举类型进行CRUD操作;
+    4,添加EntitySession实体会话状态机制,模仿于ADO.NET Entity Framework ;
+    5,更新Tools.CodeTimer 工具类,添加测试平台选择功能;解决Vista以下系统无法进行测试的问题;
+    6,添加几个常用扩展方法;
+
+版本4.0.0.111:[2010-8-4 1:26:20]
+    1,改善ORM查询效率;
+    2,封装NkjSoftBllBase 类,提供常用方法的封装,继承之后可以直接调用;
+    3,添加 NkjSoft.Web 类库,封装 Web项目的常用设施;
+    4,封装了一个简单 PageBase,可供日常项目使用;
+    5,添加BLL层代码生成类 BllClassBuilder ,在 NkjSoft.Tools.ModelBuilder 命名空间下。已经在可视化生成界面实现。
+
+版本3.5.0.111:[2010-7-19 1:26:20]
+    1,修复字段参数长度不正确的问题;
+    2,别名问题还没有解决的方法;
+版本3.5.0.102:[2010-7-17 21:26:20]
+    1,修复 必须转换别名的Bug;
+    2,添加 InsertOrUpdatable 字段标记,表示 该字段是否参与 Insert Or Update 操作 ..
+    3,添加 LEFT OUTER JOIN  查询支持,只需要在Model 类的“外键列”上添加 Association标记，格式为：
+[Association(Member = "Users", KeyMembers = "RoleID", RelatedEntityID = "Users", RelatedKeyMembers = "RoleID")]
+    Member 表示当前对象关联外键之后的对象属性名称，KeyMembers 表示关联的键名称；RelatedEntityID 表示关联的对象在DataContext中的属性名，RelatedKeyMembers 表示DataContext 关联的属性类型的用于关联的外键。举例:用户和角色关联:
+    在Model 的Users 中的 RoleID 属性上添加
+        [Association(IsForeignKey = true, Member = "Roles", KeyMembers = "ID", RelatedEntityID = "Roles", RelatedKeyMembers = "ID")]
+    在Model 的Roles 中的ID 属性上添加:
+        [Association(Member = "Users", KeyMembers = "RoleID", RelatedEntityID = "Users", RelatedKeyMembers = "RoleID")]
+    如果是一对多的关联,可以在主表的 Model 中设置关联的表实体的List&lt;T&gt; 集合。
+   4,待解决的问题: 支持 select new {ColName}; //别名的支持...
+
+版本3.1.0.102:[2010-7-7 0:35:20]
+    1,修复Web项目的时候加载NkjSoft.dll异常;
+    [遗留问题:ORM的时候无法获取实体映射的默认值]
+    2,新问题: 批量更新 无法指定需要更新的列(插入或者更新的时候)...
+版本1.5.12.201 :
+    1,修复 Access 数据库无法分页的问题。
+    2,修复 Insert/Update 的时候会对自动增长列进行操作的Bug;
+生成器: V2.0.0
+    1,支持 Access 数据库 和 MSQL 数据库;</value>
+  </data>
+  <data name="BllBaseTemplate" xml:space="preserve">
+    <value>using System;  
+using NkjSoft.Extensions;
+using NkjSoft.Extensions.Data;
+using NkjSoft.ORM;
+using NkjSoft.CommonTypes;
+using $ModelNameSpace$;
+
+namespace $BllNameSpace$
+{
+    /// &lt;summary&gt;
+    ///   对 &lt;see cref="$BllBaseName$"/&gt; 的描述。 
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name="T"&gt;实体类类型&lt;/typeparam&gt;
+    public class $BllBaseName$&lt;T&gt; : NkjSoftBllBase&lt;T&gt; where T:class,new()
+    {
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        public $BllBaseName$()
+            : base($QueryContextFullName$.Default)
+        {
+
+        }
+    }
+}</value>
+  </data>
+  <data name="BllClassTemplate" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq; 
+using System.Data;
+using NkjSoft.Extensions;
+using NkjSoft.Extensions.Data;
+
+using NkjSoft.ORM;
+using NkjSoft.CommonTypes; 
+using $ModelNameSpace$;
+
+
+namespace $BllNameSpace$
+{
+    /// &lt;summary&gt;
+    /// 对 &lt;see cref="$ClassName$"/&gt; 的描述。无法继承此类。
+    /// &lt;/summary&gt;
+    public sealed class $ClassName$ : $BllBaseName$&lt;$ModelName$&gt; 
+    {
+        #region --- 单例实现 ---
+        private static readonly $ClassName$ _instance = new $ClassName$ ;
+        /// &lt;summary&gt;
+        /// 获取 &lt;see cref="$ClassName$"/&gt; 的单个实例。
+        /// &lt;/summary&gt;
+        public static $ClassName$ Instance
+        {
+            get
+            {
+                if (null == _instance) _instance = new $ClassName$();
+                return _instance;
+            }
+        }
+        private $ClassName$()
+        {
+
+        }
+        #endregion
+    }
+}</value>
+  </data>
+  <data name="DataContextTemplate" xml:space="preserve">
+    <value>using System; 
+using System.Text;
+using NkjSoft.ORM;
+using NkjSoft.ORM.Core;
+using $ModelNameSpace$;
+
+namespace $ModelNameSpace$
+{
+        ///&lt;summary&gt;
+        /// 表示一个对数据库 $DataBaseName$ 的查询上下文。
+        ///&lt;/summary&gt;
+        public class $DataBaseName$DataContext : QueryContext
+        {
+                #region --- 属性 --- 
+                $PropertyArea$
+
+                #endregion
+                ///&lt;summary&gt;
+                /// 初始化一个新的 $DataBaseName$DataContext 对象。
+                ///&lt;/summary&gt;
+                public $DataBaseName$DataContext()
+                {
+                    if (Provider == null)
+                        Provider = ProviderFactory.FromApplicationSettings();
+                    $InnerPropertyArea$
+                    //Provider.Log = Console.Out; 
+                } 
+
+                private static readonly $DataBaseName$DataContext instance = new $DataBaseName$DataContext();  
+                /// &lt;summary&gt;
+                /// 获取默认查询上下文
+                /// &lt;/summary&gt;
+                public static $DataBaseName$DataContext Default { get { if (instance == null)instance = new $DataBaseName$DataContext(); return instance; } }
+        }
+}</value>
+  </data>
+  <data name="DefaultTemplate" xml:space="preserve">
+    <value>#region --- CodeInfo ---
+/*
+ *&lt;CodeGenerated&gt;
+ * 此代码由 : NkjSoft 实体类 代码生成器生成 ...
+ * 生成时间 : $DateTime.Now$
+ * 代码作者 : 俞如凯
+ * 类型名称 : $ClassName$ 
+ *&lt;/CodeGenerated&gt;
+ */
+#endregion
+
+using System; 
+using System.Text;
+using NkjSoft.ORM.Data;
+using NkjSoft.ORM.Data.Mapping; 
+
+namespace $NameSpace$
+{
+    ///&lt;summary&gt;
+    /// 对 $ClassName$ 的描述。
+    ///&lt;/summary&gt;
+    [Serializable]
+    public partial class $ClassName$ : EntityBase 
+    {
+        ///&lt;summary&gt;
+        /// 实例化新的 &lt;see cref="$NameSpace$.$ClassName$"/&gt; 的实例。
+        ///&lt;/summary&gt;
+        public $ClassName$() :
+	this(false)
+        {             
+             
+        }
+
+        ///&lt;summary&gt;
+        /// 实例化新的 &lt;see cref="$NameSpace$.$ClassName$"/&gt; 的实例。
+        ///&lt;/summary&gt;
+        /// &lt;param name="useInsertOrUpdateNotify"&gt;指定一个值,表示是否对当前实体进行属性更新跟踪。&lt;/param&gt;
+        public $ClassName$(bool useInsertOrUpdateNotify)
+            : base(useInsertOrUpdateNotify)
+        {             
+             //设置默认值
+             $InnerCtor$
+        }
+	
+        #region --- 字段 --- 
+        $Fields$
+        #endregion
+
+        #region --- 属性 ---
+        @@Start 
+        /// &lt;summary&gt;
+        /// $Remark$
+        /// &lt;/summary&gt;  
+        $ColumnMapping$
+        public $DotNetType$ $PropertyName$ 
+        {
+            get { return _$ColumnName$; }
+            set
+            {
+                if (value != _$ColumnName$)
+                    OnPropertyChanged("$ColumnName$");
+                _$ColumnName$ = value;
+            }
+        }
+        @@End 
+        #endregion 
+         
+    } 
+}</value>
+  </data>
+  <data name="LatestVersion" xml:space="preserve">
+    <value>4.6.1.1</value>
+  </data>
+  <data name="TemplateHelpString" xml:space="preserve">
+    <value>当前模板支持的标记:
+	$NameSpace$		--- 命名空间
+	$ClassName$		--- 实体类名
+	@@Start			--- 起始循环
+	$Remark$			--- 属性描述
+	$ColumnName$	--- 特性列名
+	$DbType$			--- 特性列类型
+	$Nullable$		--- 是否允许空
+	$PrimaryKey$		--- 是否是主键
+	$Identity$			--- 是否自动增长
+	$DefaultValue$		--- 默认值
+	@@End			--- 结束循环</value>
+  </data>
+</root>

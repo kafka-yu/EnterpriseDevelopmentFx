@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<module name="ServiceModule">
+  <bind name="IUserAccountService" service="NkjSoft.ServiceContracts.Common.IUserAccountService, NkjSoft.ServiceContracts"
+        to="NkjSoft.Services.UserAccountService, NkjSoft.Services"/> 
+</module>
