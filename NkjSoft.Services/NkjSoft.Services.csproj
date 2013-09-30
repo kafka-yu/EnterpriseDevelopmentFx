@@ -56,6 +56,10 @@
       <Project>{889c10b0-4f27-4c1c-99d2-79876cf8a673}</Project>
       <Name>NkjSoft.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NkjSoft.ServiceContracts\NkjSoft.ServiceContracts.csproj">
+      <Project>{c4e03e9b-20c2-40a4-9c33-94c6c439cf16}</Project>
+      <Name>NkjSoft.ServiceContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
