@@ -34,19 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HeyCahcer2.Core">
-      <HintPath>E:\TDDOWNLOAD\web\HeyCahcer2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="HeyCahcer2.EntlibProvider">
-      <HintPath>E:\TDDOWNLOAD\web\HeyCahcer2.EntlibProvider.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
-      <HintPath>E:\TDDOWNLOAD\web\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
-      <HintPath>E:\TDDOWNLOAD\web\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />

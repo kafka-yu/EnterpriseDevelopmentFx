@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NkjSoft.ServiceContracts", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NkjSoft.Services", "NkjSoft.Services\NkjSoft.Services.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NkjSoft.Framework", "NkjSoft.Framework\NkjSoft.Framework.csproj", "{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,16 @@ Global
 		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +114,7 @@ Global
 		{15B3E0D2-6217-493A-A690-158C497F5318} = {175C14D9-A5B6-4E2A-BA39-882E3A3EF378}
 		{8319FED8-0DDF-463F-9BFA-21647B8C14BA} = {16FE732F-E8FC-4069-9016-A0F323C70550}
 		{889C10B0-4F27-4C1C-99D2-79876CF8A673} = {FD66B11B-2DE0-4DD3-82CF-994DCAB5BE6D}
+		{F6FFE67F-A846-40F5-9BDF-907D1CB18F5B} = {231B5B8C-E2AC-44D3-A968-D85A49CF7A64}
 		{288272D6-96ED-4F7D-AA70-A87034FD627A} = {E3FCA214-BD66-40B3-833A-66F28C133DD1}
 	EndGlobalSection
 EndGlobal

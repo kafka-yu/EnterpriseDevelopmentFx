@@ -28,7 +28,7 @@
 
             .easyui-accordion1 ul li.hover a {
                 color: #416AA3;
-                text-decoration:none;
+                text-decoration: none;
             }
 
         .easyui-accordion1 ul li.selected {
@@ -58,23 +58,25 @@
     }
 
 .panel-tool a:hover {
-  background-color:  initial;
-}
-.accordion-collapse{
-	background:initial;
-}
-.accordion-expand{
-	background:initial;
+    background-color: initial;
 }
 
-/*a:hover.l-btn {
+.accordion-collapse {
+    background: initial;
+}
+
+.accordion-expand {
+    background: initial;
+}
+
+a:hover.easyui-linkbutton-blue {
     background: #0078B1;
     color: rgb(255, 255, 255);
     border: 1px solid #ddd;
     filter: none;
 }
 
-a.l-btn {
+a.easyui-linkbutton-blue {
     color: #777;
     background-image: url('images/linkbutton_bg.png');
     background-repeat: no-repeat;
@@ -94,22 +96,22 @@ a.l-btn {
 }
 
 
-a.l-btn {
+a.easyui-linkbutton-blue {
     color: rgb(243, 244, 245); /*rgb(255, 255, 255);*/
-/*}
+}
 
-a.l-btn-gray, a.easyui-linkbutton-gray {
+a.easyui-linkbutton-gray {
     background: #CCC;
     color: black;
 }
 
-a:hover.l-btn-gray, a:hover.easyui-linkbutton-gray {
+a:hover.easyui-linkbutton-gray {
     background: #CCC;
     color: black;
     border: 1px solid #ddd;
     filter: none;
 }
 
-a:hover.l-btn-plain {
+a:hover.easyui-linkbutton-metro-plain {
     padding: 0 0 0 0;
-}*/*/
+}
