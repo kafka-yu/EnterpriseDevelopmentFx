@@ -47,6 +47,9 @@
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
       <HintPath>E:\TDDOWNLOAD\web\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ninject">
       <HintPath>E:\TDDOWNLOAD\web\Ninject-3.0.0.15-release-net-4.0\Ninject.dll</HintPath>
     </Reference>
@@ -124,6 +127,7 @@
     <Compile Include="Lib\ViewPageAttribute.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="KernelManager.cs" />
+    <Compile Include="Models\JsonNetModelBinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

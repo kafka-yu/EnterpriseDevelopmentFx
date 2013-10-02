@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NkjSoft.Web.UI.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -53,6 +54,8 @@ namespace NkjSoft.Web.UI
         {
             AreaRegistration.RegisterAllAreas();
 
+            ModelBinders.Binders.DefaultBinder = new Json_netModelBinder();
+
             // Use LocalDB for Entity Framework by default
             Database.DefaultConnectionFactory = new SqlConnectionFactory(@"Data Source=(localdb)\v11.0; Integrated Security=True; MultipleActiveResultSets=True");
 
@@ -63,6 +66,7 @@ namespace NkjSoft.Web.UI
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
         }
     }
 }

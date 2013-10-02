@@ -133,15 +133,8 @@ function buildUpParams(param) {
             Operation: $it.attr("data-setting-field-opt")
         });
     });
-    var $it = $($paramsControls[0]);
-    param.queryParams = {
-        Filed1: $it.attr("data-setting-field"),
-        Field2: $it.attr("data-setting-field-to"),
-        Field1Type: $it.attr("data-setting-type"),
-        Value1: $it.val(),
-        Value2: $it.attr("data-setting-field-to-value"),
-        Operation: $it.attr("data-setting-field-opt")
-    };
+
+    param.queryParams = queryParams;
     // Field1 = "",
     // Value1 = "",
     // Field2 = "",
