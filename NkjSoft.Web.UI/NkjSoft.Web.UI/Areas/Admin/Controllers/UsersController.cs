@@ -23,13 +23,9 @@ namespace NkjSoft.Web.UI.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult GetUsers(int? page, int? rows, QueryParameter[] queryParams)
+        public ActionResult GetUsers(int? page, int? rows, IEnumerable<QueryParameter> queryParams, IEnumerable<string> ids)
         {
             var testData = new List<NkjSoft.Model.Common.Menu>();
-            var vals = this.Request["queryParams"];
-
-            Console.WriteLine(vals);
-
             testData.Add(new Model.Common.Menu() { ActionName = "test", Controller = "Home", Id = 1, Name = "Add", });
             testData.Add(new Model.Common.Menu() { ActionName = "test2", Controller = "Home", Id = 1, Name = "Add", });
             testData.Add(new Model.Common.Menu() { ActionName = "test3", Controller = "Home", Id = 1, Name = "Add", });

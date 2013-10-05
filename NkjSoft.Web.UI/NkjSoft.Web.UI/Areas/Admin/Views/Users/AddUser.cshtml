@@ -26,8 +26,8 @@
             <input id="Name" data-setting-field="Name" data-setting-type="string" type="text" name="Name" value="" />
         </li>
         <li>
-            <label for="Name">值：</label>
-            <input id="Val" data-setting-field="Value" data-setting-type="string" type="text" name="Value" value="" />
+            <label for="Val">值：</label>
+            <input id="Val" data-setting-field="Value" data-setting-type="string" type="text" name="Val" value="" />
         </li>
     </ul>
 </div>
@@ -50,6 +50,27 @@
 
     function buildParams(param) {
         buildUpParams(param);
+    }
+
+    function _DoSearch2() {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetUsers", "Users", new { area = "Admin" })",
+            data: {
+                queryParams: [{
+                    Field1: "2",
+                    Field2: "2"
+                }],
+                ids: ["2,3,6", "3423"],
+                page: 1,
+                rows: 5
+            },
+            dataType: "json",
+            traditional: true,
+            success: function (e) {
+                alert(e);
+            }
+        });
     }
 
 </script>

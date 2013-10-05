@@ -1,4 +1,5 @@
-﻿using NkjSoft.Web.UI.Models;
+﻿using NkjSoft.Framework;
+using NkjSoft.Web.UI.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -54,7 +55,9 @@ namespace NkjSoft.Web.UI
         {
             AreaRegistration.RegisterAllAreas();
 
-            ModelBinders.Binders.DefaultBinder = new Json_netModelBinder();
+            ModelBinders.Binders.DefaultBinder = new DefaultModelBinder();
+
+            ModelBinders.Binders.Add(new KeyValuePair<Type, IModelBinder>(typeof(IEnumerable<QueryParameter>), new QueryParameterModelBinder()));
 
             // Use LocalDB for Entity Framework by default
             Database.DefaultConnectionFactory = new SqlConnectionFactory(@"Data Source=(localdb)\v11.0; Integrated Security=True; MultipleActiveResultSets=True");

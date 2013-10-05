@@ -1,4 +1,8 @@
-﻿$(function () {
+﻿
+
+jQuery.ajaxSettings.traditional = true;
+
+$(function () {
     //InitLeftMenu();
     if (typeof _initGrid != 'undefined' && _initGrid instanceof Function) {
         _initGrid();
@@ -52,17 +56,9 @@ function initialDataGrid(cols, gridId) {
         toolbar: '#toolbar',
         pagination: true,
         rownumbers: false,
+        contentType: "application/json",
         fitcolumns: false,
-        queryParams: {
-            queryParams: {
-                Field1: "1",
-                Field2: "1",
-                Field1Type: "1",
-                Value1: "1",
-                Value2: "1",
-                Operation: "1"
-            }
-        },
+        traditional: true,
         onBeforeLoad: function (param) {
             onBuildParams(param);
         }
@@ -123,9 +119,8 @@ function buildUpParams(param) {
 
     $paramsControls.each(function (index, it) {
         var $it = $(it);
-        alert($it.val());
         queryParams.push({
-            Filed1: $it.attr("data-setting-field"),
+            Field1: $it.attr("data-setting-field"),
             Field2: $it.attr("data-setting-field-to"),
             Field1Type: $it.attr("data-setting-type"),
             Value1: $it.val(),
@@ -133,12 +128,87 @@ function buildUpParams(param) {
             Operation: $it.attr("data-setting-field-opt")
         });
     });
-
-    param.queryParams = queryParams;
-    // Field1 = "",
-    // Value1 = "",
-    // Field2 = "",
-    // Values2 = "",
-    // Operation = "",
+    param.queryParams = $.toJSON(queryParams);
 
 }
+
+//用于MVC参数适配JavaScript闭包函数
+//2013-7-17 devotion 创建
+/*
+使用方式如下：
+                $.ajax({
+                    url: "@Url.Action("AjaxTest")",
+                    data: mvcParamMatch(sendData),//在此转换json格式，用于mvc参数提交
+                    dataType: "json",
+                    type: "post",
+                    success:function(result) {
+                        alert(result.Message);
+                    }
+                });
+*/
+var mvcParamMatch = (function () {
+    var MvcParameterAdaptive = {};
+    //验证是否为数组
+    MvcParameterAdaptive.isArray = Function.isArray || function (o) {
+        return typeof o === "object" &&
+                Object.prototype.toString.call(o) === "[object Array]";
+    };
+
+    //将数组转换为对象
+    MvcParameterAdaptive.convertArrayToObject = function (/*数组名*/arrName, /*待转换的数组*/array, /*转换后存放的对象，不用输入*/saveOjb) {
+        var obj = saveOjb || {};
+
+        function func(name, arr) {
+            for (var i in arr) {
+                if (!MvcParameterAdaptive.isArray(arr[i]) && typeof arr[i] === "object") {
+                    for (var j in arr[i]) {
+                        if (MvcParameterAdaptive.isArray(arr[i][j])) {
+                            func(name + "[" + i + "]." + j, arr[i][j]);
+                        } else if (typeof arr[i][j] === "object") {
+                            MvcParameterAdaptive.convertObject(name + "[" + i + "]." + j + ".", arr[i][j], obj);
+                        } else {
+                            obj[name + "[" + i + "]." + j] = arr[i][j];
+                        }
+                    }
+                } else {
+                    obj[name + "[" + i + "]"] = arr[i];
+                }
+            }
+        }
+
+        func(arrName, array);
+
+        return obj;
+    };
+
+    //转换对象
+    MvcParameterAdaptive.convertObject = function (/*对象名*/objName,/*待转换的对象*/turnObj, /*转换后存放的对象，不用输入*/saveOjb) {
+        var obj = saveOjb || {};
+
+        function func(name, tobj) {
+            for (var i in tobj) {
+                if (MvcParameterAdaptive.isArray(tobj[i])) {
+                    MvcParameterAdaptive.convertArrayToObject(i, tobj[i], obj);
+                } else if (typeof tobj[i] === "object") {
+                    func(name + i + ".", tobj[i]);
+                } else {
+                    obj[name + i] = tobj[i];
+                }
+            }
+        }
+
+        func(objName, turnObj);
+        return obj;
+    };
+
+    return function (json, arrName) {
+        arrName = arrName || "";
+        if (typeof json !== "object") throw new Error("请传入json对象");
+        if (MvcParameterAdaptive.isArray(json) && !arrName) throw new Error("请指定数组名，对应Action中数组参数名称！");
+
+        if (MvcParameterAdaptive.isArray(json)) {
+            return MvcParameterAdaptive.convertArrayToObject(arrName, json);
+        }
+        return MvcParameterAdaptive.convertObject("", json);
+    };
+})();
