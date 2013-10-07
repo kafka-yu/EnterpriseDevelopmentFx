@@ -44,21 +44,36 @@ function fixTheGridSize(id) {
 }
 
 
-function initialDataGrid(cols, gridId) {
-    if (typeof gridId == "undefined" || gridId == null) {
+function initialDataGrid(cols, setting) {
+    var gridId = "";
+    if (typeof setting == "undefined" || typeof setting.gridId == "undefined" || setting.gridId == null) {
         gridId = "#datagrid";
     }
 
+    var multipleSelect = false;
+    if (typeof setting != "undefined") {
+        if (setting.multipleSelect != "undefined") {
+            multipleSelect = setting.multipleSelect;
+        }
+    }
+
+    if (multipleSelect == true) {
+        var additional =  { field: "Id", title: "", checkbox: true, align: 'center' };
+
+        cols[0].unshift(additional);
+    }
+
     $(gridId).datagrid({
-        singleSelect: true,
+        checkOnSelect: true,
+        selectOnCheck: true,
+        striped:true,
+        singleSelect: !multipleSelect,
         remoteSort: false,
         columns: cols,
         toolbar: '#toolbar',
         pagination: true,
         rownumbers: false,
-        contentType: "application/json",
-        fitcolumns: false,
-        traditional: true,
+        fitcolumns: true,
         onBeforeLoad: function (param) {
             onBuildParams(param);
         }

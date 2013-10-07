@@ -12,14 +12,19 @@ namespace NkjSoft.Model.Common
     using System;
     using System.Collections.Generic;
     
-    public partial class Menu
+    public partial class Roles
     {
-        public System.Guid Id { get; set; }
-        public string Text { get; set; }
-        public string Action { get; set; }
-        public string Controller { get; set; }
-        public string Url { get; set; }
-        public string Icon { get; set; }
-        public Nullable<System.Guid> ParentId { get; set; }
+        public Roles()
+        {
+            this.Users = new HashSet<Users>();
+        }
+    
+        public System.Guid ApplicationId { get; set; }
+        public System.Guid RoleId { get; set; }
+        public string RoleName { get; set; }
+        public string Description { get; set; }
+    
+        public virtual Applications Applications { get; set; }
+        public virtual ICollection<Users> Users { get; set; }
     }
 }

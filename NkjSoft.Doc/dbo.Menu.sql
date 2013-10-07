@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Menu]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Text] NVARCHAR(50) NULL, 
+    [Action] NVARCHAR(100) NULL, 
+    [Controller] NVARCHAR(100) NULL, 
+    [Url] NVARCHAR(500) NULL, 
+    [Icon] VARCHAR(50) NULL, 
+    [ParentId] UNIQUEIDENTIFIER NULL
+)
+
+GO 

@@ -12,14 +12,14 @@ namespace NkjSoft.Model.Common
     using System;
     using System.Collections.Generic;
     
-    public partial class Menu
+    public partial class Profiles
     {
-        public System.Guid Id { get; set; }
-        public string Text { get; set; }
-        public string Action { get; set; }
-        public string Controller { get; set; }
-        public string Url { get; set; }
-        public string Icon { get; set; }
-        public Nullable<System.Guid> ParentId { get; set; }
+        public System.Guid UserId { get; set; }
+        public string PropertyNames { get; set; }
+        public string PropertyValueStrings { get; set; }
+        public byte[] PropertyValueBinary { get; set; }
+        public System.DateTime LastUpdatedDate { get; set; }
+    
+        public virtual Users Users { get; set; }
     }
 }

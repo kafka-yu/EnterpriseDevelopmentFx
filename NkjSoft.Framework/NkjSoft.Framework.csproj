@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\DataTypeHelper.cs" />
+    <Compile Include="IoC\IComponentContext.cs" />
     <Compile Include="Mvc\JsonNetModelBinder.cs" />
     <Compile Include="Mvc\ParameterModelBinder.cs" />
     <Compile Include="PageList.cs" />

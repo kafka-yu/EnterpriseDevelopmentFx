@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Web;
 
-namespace NkjSoft.Repository
+namespace NkjSoft.Web.UI.Services
 {
-    public class IUserRepository
+    public class IUnitOfWork
     {
     }
 }

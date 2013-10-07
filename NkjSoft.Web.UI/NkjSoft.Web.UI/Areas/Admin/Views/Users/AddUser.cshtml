@@ -38,15 +38,31 @@
     <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-remove" plain="true" onclick="destroyUser()">Remove User</a>
 </div>
 
-<table id="datagrid" title="" url="@Url.Action("GetUsers", "Users", new { area = "Admin" })" ></table>
+<table id="datagrid" 
+        singleSelect="false" title="" url="@Url.Action("GetUsers", "Users", new { area = "Admin" })" >
+</table>
 
 <script type="text/javascript">
+
     function _initGrid() {
-        initialDataGrid([[{ field: 'ActionName', title: '名', width: 80 },
+        initialDataGrid([[
+            { field: 'Action', title: '名', width: 80 },
            { field: 'Controller', width: 80, align: 'right' },
-           { field: 'Id', title: '手机', width: 50 },
-           { field: 'Name', title: 'Name', width: 60 }]]);
+           { field: 'Phone', title: '手机', width: 50 },
+           {
+               field: 'Text', title: 'Text', width: 200, formatter: function (val, row, index) {
+                   return '<a href="javascript:void(0);" class="removeBtn">asdfasdfasdfasdf' + index + '</a>';
+               }
+           }]], { multipleSelect: true });
     }
+
+    $(function () {
+
+
+        $(".removeBtn").live("click", function (e) {
+            alert("ads");
+        });
+    });
 
     function buildParams(param) {
         buildUpParams(param);
