@@ -7,8 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NkjSoft.Model.Common
+namespace NkjSoft.Models.T4
 {
+    #pragma warning disable 1573
     using System;
     using System.Collections.Generic;
     

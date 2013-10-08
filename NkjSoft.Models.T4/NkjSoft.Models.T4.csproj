@@ -47,17 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Applications.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
     </Compile>
-    <Compile Include="EnterpriseDevelopmentFx.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EnterpriseDevelopmentFx.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EnterpriseDevelopmentFx.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+    <Compile Include="Applications_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
     <Compile Include="EnterpriseDevelopmentFx.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -65,23 +58,56 @@
       <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
     </Compile>
     <Compile Include="Memberships.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Memberships_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="MenusInRoles.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenusInRoles_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Entities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Mapping.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
     <Compile Include="Profiles.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Profiles_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roles_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
-      <DependentUpon>EnterpriseDevelopmentFx.tt</DependentUpon>
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users_Mapping.cs">
+      <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -90,18 +116,20 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EnterpriseDevelopmentFx.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EnterpriseDevelopmentFx.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
-      <LastGenOutput>EnterpriseDevelopmentFx.Context.cs</LastGenOutput>
-    </None>
     <None Include="EnterpriseDevelopmentFx.edmx.diagram">
       <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
     </None>
-    <None Include="EnterpriseDevelopmentFx.tt">
+    <None Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
-      <LastGenOutput>EnterpriseDevelopmentFx.cs</LastGenOutput>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model1.Entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Entities.cs</LastGenOutput>
+    </None>
+    <None Include="Model1.Mapping.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Mapping.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
