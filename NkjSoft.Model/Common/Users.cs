@@ -9,25 +9,37 @@
 
 namespace NkjSoft.Model.Common
 {
+    using NkjSoft.Framework.Common;
     using System;
     using System.Collections.Generic;
-    
-    public partial class Users
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    public partial class Users : EntityBase<Guid>
     {
         public Users()
         {
             this.Roles = new HashSet<Roles>();
         }
-    
+
         public System.Guid ApplicationId { get; set; }
+
         public System.Guid UserId { get; set; }
         public string UserName { get; set; }
         public bool IsAnonymous { get; set; }
         public System.DateTime LastActivityDate { get; set; }
-    
+
         public virtual Applications Applications { get; set; }
+
         public virtual Memberships Memberships { get; set; }
+
         public virtual Profiles Profiles { get; set; }
+
         public virtual ICollection<Roles> Roles { get; set; }
+
+        public override Guid __KeyId
+        {
+            get { return UserId; }
+        }
     }
 }

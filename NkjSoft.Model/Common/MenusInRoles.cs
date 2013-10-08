@@ -9,12 +9,14 @@
 
 namespace NkjSoft.Model.Common
 {
+    using NkjSoft.Framework.Common;
     using System;
     using System.Collections.Generic;
-    
-    public partial class MenusInRoles
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    public partial class MenusInRoles : IdBasedEntityBase<int>
     {
-        public int Id { get; set; }
         public Nullable<System.Guid> MenuId { get; set; }
         public Nullable<System.Guid> RoleId { get; set; }
     }

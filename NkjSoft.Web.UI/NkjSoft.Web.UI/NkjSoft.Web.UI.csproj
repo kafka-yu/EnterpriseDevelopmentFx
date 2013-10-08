@@ -40,22 +40,25 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Kooboo, Version=4.2.1.818, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kooboo\Kooboo.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Common, Version=4.2.1.818, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kooboo\Kooboo.CMS.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
-      <HintPath>E:\TDDOWNLOAD\web\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
-      <HintPath>E:\TDDOWNLOAD\web\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ninject">
-      <HintPath>E:\TDDOWNLOAD\web\Ninject-3.0.0.15-release-net-4.0\Ninject.dll</HintPath>
+      <HintPath>..\..\lib\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="Ninject.Extensions.Xml">
-      <HintPath>E:\TDDOWNLOAD\.net\Ninject\Ninject.Extensions.Xml-3.0.0.5-release-net-4.0\Ninject.Extensions.Xml.dll</HintPath>
+      <HintPath>..\..\lib\Ninject.Extensions.Xml.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -475,6 +478,18 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\NkjSoft.Core.Data\NkjSoft.Core.Data.csproj">
+      <Project>{eba7bd18-8758-4eaa-8839-6218b1ef2665}</Project>
+      <Name>NkjSoft.Core.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NkjSoft.Core.Models\NkjSoft.Core.Models.csproj">
+      <Project>{37173286-55d8-4b46-a114-7d01d709f268}</Project>
+      <Name>NkjSoft.Core.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NkjSoft.Framework.Data\NkjSoft.Framework.Data.csproj">
+      <Project>{479ec57d-4c1e-4a78-823a-57f597ac3ed5}</Project>
+      <Name>NkjSoft.Framework.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\NkjSoft.Framework\NkjSoft.Framework.csproj">
       <Project>{f6ffe67f-a846-40f5-9bdf-907d1cb18f5b}</Project>
       <Name>NkjSoft.Framework</Name>
@@ -486,6 +501,10 @@
     <ProjectReference Include="..\..\NkjSoft.ServiceContracts\NkjSoft.ServiceContracts.csproj">
       <Project>{c4e03e9b-20c2-40a4-9c33-94c6c439cf16}</Project>
       <Name>NkjSoft.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NkjSoft.Services\NkjSoft.Services.csproj">
+      <Project>{15b3e0d2-6217-493a-a690-158c497f5318}</Project>
+      <Name>NkjSoft.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

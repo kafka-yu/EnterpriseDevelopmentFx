@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using NkjSoft.Model;
 
 using Ninject;
-using NkjSoft.ServiceContracts.Common;
+using NkjSoft.ServiceContracts.Core.Account;
 namespace NkjSoft.Web.UI.Lib
 {
     public class PermissionControlFilter : ActionFilterAttribute
@@ -72,10 +72,10 @@ namespace NkjSoft.Web.UI.Lib
             var controllerName = filterContext.RouteData.Values["controller"].ToString();
             var actionName = filterContext.RouteData.Values["action"].ToString();
 
-            var helper = new UserLogonHelper(user);
+            //var helper = new UserLogonHelper(user);
 
-            var hasMenuPermission =
-                helper.IsUserHasMenuPermission(actionName, controllerName, pageUrl);
+            //var hasMenuPermission =
+            //    helper.IsUserHasMenuPermission(actionName, controllerName, pageUrl);
 
             return true;
         }

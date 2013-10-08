@@ -9,12 +9,13 @@
 
 namespace NkjSoft.Model.Common
 {
+    using NkjSoft.Framework.Common;
     using System;
     using System.Collections.Generic;
-    
-    public partial class Menu
+    using System.ComponentModel.DataAnnotations;
+
+    public partial class Menu : IdBasedEntityBase<Guid>
     {
-        public System.Guid Id { get; set; }
         public string Text { get; set; }
         public string Action { get; set; }
         public string Controller { get; set; }

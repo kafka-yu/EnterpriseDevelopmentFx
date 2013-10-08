@@ -1,14 +1,24 @@
-﻿using NkjSoft.Framework;
+﻿using Kooboo.CMS.Common.Runtime;
+using NkjSoft.Core.Data.Repositories.Account;
+using NkjSoft.Framework;
+using NkjSoft.Framework.IoC;
+using NkjSoft.Model.Common;
+using NkjSoft.Web.UI.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
 namespace NkjSoft.Web.UI.Areas.Admin.Controllers
 {
+    [Export]
     public class UsersController : Controller
     {
+        [Import]
+        public ITest AccountContract { get; set; }
+
         //
         // GET: /Admin/Users/
 
@@ -51,6 +61,13 @@ namespace NkjSoft.Web.UI.Areas.Admin.Controllers
             testData.Add(new Model.Common.Menu() { Action = "test23", Controller = "Home", Id = Guid.NewGuid(), Text = "Add", });
             testData.Add(new Model.Common.Menu() { Action = "test24", Controller = "Home", Id = Guid.NewGuid(), Text = "Add", });
             testData.Add(new Model.Common.Menu() { Action = "test25", Controller = "Home", Id = Guid.NewGuid(), Text = "Add", });
+
+            //var repo = EngineContext.Current.Resolve<IUnitOfWork>()
+            //    .GetRepository<NkjSoft.Repository.IUserRepository>();
+            var repo =
+                AccountContract;
+
+            var data = repo.GetType();
 
             var result = testData.Skip((page.GetValueOrDefault() - 1) * rows.GetValueOrDefault())
                 .Take(rows.GetValueOrDefault())

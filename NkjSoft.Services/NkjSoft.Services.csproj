@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -44,6 +45,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserAccountService.cs" />
   </ItemGroup>
@@ -51,6 +53,22 @@
     <ProjectReference Include="..\NkjSoft.ApplicationService\NkjSoft.ApplicationService.csproj">
       <Project>{288272d6-96ed-4f7d-aa70-a87034fd627a}</Project>
       <Name>NkjSoft.ApplicationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NkjSoft.Core.Data\NkjSoft.Core.Data.csproj">
+      <Project>{eba7bd18-8758-4eaa-8839-6218b1ef2665}</Project>
+      <Name>NkjSoft.Core.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NkjSoft.Core.Models\NkjSoft.Core.Models.csproj">
+      <Project>{37173286-55d8-4b46-a114-7d01d709f268}</Project>
+      <Name>NkjSoft.Core.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NkjSoft.Framework.Data\NkjSoft.Framework.Data.csproj">
+      <Project>{479ec57d-4c1e-4a78-823a-57f597ac3ed5}</Project>
+      <Name>NkjSoft.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NkjSoft.Framework\NkjSoft.Framework.csproj">
+      <Project>{f6ffe67f-a846-40f5-9bdf-907d1cb18f5b}</Project>
+      <Name>NkjSoft.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\NkjSoft.Model\NkjSoft.Model.csproj">
       <Project>{889c10b0-4f27-4c1c-99d2-79876cf8a673}</Project>

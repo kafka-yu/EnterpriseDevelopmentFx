@@ -6,8 +6,8 @@ using System.Text;
 
 namespace NkjSoft.Repository
 {
-    public interface IUserRepository : IRepository<Users>
-    {
+    //public interface IUserRepository : IRepository<Users>
+    //{
 
-    }
+    //}
 }

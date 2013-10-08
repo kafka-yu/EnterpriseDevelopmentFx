@@ -9,22 +9,32 @@
 
 namespace NkjSoft.Model.Common
 {
+    using NkjSoft.Framework.Common;
     using System;
     using System.Collections.Generic;
-    
-    public partial class Roles
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    public partial class Roles : EntityBase<Guid>
     {
         public Roles()
         {
             this.Users = new HashSet<Users>();
         }
-    
+
         public System.Guid ApplicationId { get; set; }
+
         public System.Guid RoleId { get; set; }
         public string RoleName { get; set; }
         public string Description { get; set; }
-    
+
         public virtual Applications Applications { get; set; }
+
         public virtual ICollection<Users> Users { get; set; }
+
+        public override Guid __KeyId
+        {
+            get { return this.RoleId; }
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Web.Mvc;
@@ -27,7 +28,8 @@ namespace NkjSoft.Web.UI.Models
         public string ConfirmPassword { get; set; }
     }
 
-    public class LogOnModel
+    [Export(typeof(ITest))]
+    public class LogOnModel : ITest
     {
         [Required]
         [Display(Name = "User name")]
@@ -41,6 +43,8 @@ namespace NkjSoft.Web.UI.Models
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
     }
+
+    public interface ITest { }
 
     public class RegisterModel
     {

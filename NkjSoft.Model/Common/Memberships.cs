@@ -9,12 +9,16 @@
 
 namespace NkjSoft.Model.Common
 {
+    using NkjSoft.Framework.Common;
     using System;
     using System.Collections.Generic;
-    
-    public partial class Memberships
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    public partial class Memberships : EntityBase<Guid>
     {
         public System.Guid ApplicationId { get; set; }
+
         public System.Guid UserId { get; set; }
         public string Password { get; set; }
         public int PasswordFormat { get; set; }
@@ -33,8 +37,14 @@ namespace NkjSoft.Model.Common
         public int FailedPasswordAnswerAttemptCount { get; set; }
         public System.DateTime FailedPasswordAnswerAttemptWindowsStart { get; set; }
         public string Comment { get; set; }
-    
+
         public virtual Applications Applications { get; set; }
+
         public virtual Users Users { get; set; }
+
+        public override Guid __KeyId
+        {
+            get { return this.UserId; }
+        }
     }
 }

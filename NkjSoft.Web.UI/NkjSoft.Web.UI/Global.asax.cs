@@ -1,7 +1,11 @@
-﻿using NkjSoft.Framework;
+﻿using Kooboo.CMS.Common.Runtime;
+using NkjSoft.Framework;
+using NkjSoft.Framework.IoC;
+using NkjSoft.Model.Migrations;
 using NkjSoft.Web.UI.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition.Hosting;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -64,12 +68,21 @@ namespace NkjSoft.Web.UI
 
             // ControllerBuilder.Current.SetControllerFactory(new NkjSoft.Web.MVC.NinjectControllerFactory());
 
-            KernelManager.Initialize(System.Configuration.ConfigurationManager
-           .AppSettings["NinjectConfig"]);
+            // KernelManager.Initialize(System.Configuration.ConfigurationManager
+            //.AppSettings["NinjectConfig"]);
+
+            //EngineContext.Current.Initialize();
+
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
+            //设置MEF依赖注入容器
+            DirectoryCatalog catalog = new DirectoryCatalog(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath);
+            MefDependencySolver solver = new MefDependencySolver(catalog);
+            DependencyResolver.SetResolver(solver);
+
+            DatabaseInitializer.Initialize();
         }
     }
 }

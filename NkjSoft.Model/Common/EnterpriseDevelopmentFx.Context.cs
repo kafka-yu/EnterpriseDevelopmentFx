@@ -7,25 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NkjSoft.Models.T4
+namespace NkjSoft.Model.Common
 {
-    using NkjSoft.Model.Common;
     using System;
+    using System.ComponentModel.Composition;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class Entities : DbContext
+
+    [Export("EF", typeof(DbContext))]
+    public partial class EnterpriseDevelopmentFxContext : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public EnterpriseDevelopmentFxContext()
+            : base("name=DefaultConnection")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            modelBuilder.Entity<Users>()
+                .HasMany<Roles>(p => p.Roles);
         }
-    
+
         public DbSet<Applications> Applications { get; set; }
         public DbSet<Memberships> Memberships { get; set; }
         public DbSet<Menu> Menu { get; set; }
