@@ -21,15 +21,17 @@ namespace NkjSoft.Core.Models.Account
         public Users()
         {
             this.Roles = new HashSet<Roles>();
-            this.LoginLogs = new HashSet<LoginLog>();
+            //this.LoginLogs = new HashSet<LoginLog>();
+
+            UserId = GuidGenerator.NewComb();
         }
 
         public System.Guid ApplicationId { get; set; }
-
+        
+        [Key]
         public System.Guid UserId { get; set; }
         public string UserName { get; set; }
 
-        public string RealName { get; set; }
 
         public bool IsAnonymous { get; set; }
         public System.DateTime LastActivityDate { get; set; }
@@ -47,6 +49,6 @@ namespace NkjSoft.Core.Models.Account
             get { return UserId; }
         }
 
-        public ICollection<LoginLog> LoginLogs { get; set; }
+        //public ICollection<LoginLog> LoginLogs { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Kooboo.CMS.Common.Runtime;
+using NkjSoft.Core.Data.Migrations;
 using NkjSoft.Framework;
 using NkjSoft.Framework.IoC;
-using NkjSoft.Model.Migrations;
 using NkjSoft.Web.UI.Models;
 using System;
 using System.Collections.Generic;
@@ -81,6 +81,8 @@ namespace NkjSoft.Web.UI
             DirectoryCatalog catalog = new DirectoryCatalog(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath);
             MefDependencySolver solver = new MefDependencySolver(catalog);
             DependencyResolver.SetResolver(solver);
+
+            MefDependencySolver.Current = solver;
 
             DatabaseInitializer.Initialize();
         }

@@ -11,7 +11,7 @@ namespace NkjSoft.Core.Data.Configurations.Security
     /// <summary>
     /// 实体类-数据表映射——角色信息
     /// </summary>    
-    internal partial class RoleConfiguration : EntityTypeConfiguration<Roles>, IEntityMapper
+    public partial class RoleConfiguration : EntityTypeConfiguration<Roles>, IEntityMapper
     {
         /// <summary>
         /// 实体类-数据表映射构造函数——角色信息

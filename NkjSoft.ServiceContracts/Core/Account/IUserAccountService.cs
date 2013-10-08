@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
-using NkjSoft.Model;
+using NkjSoft.Core.Models.Account;
 
 namespace NkjSoft.ServiceContracts.Core.Account
 {
@@ -26,7 +26,7 @@ namespace NkjSoft.ServiceContracts.Core.Account
         /// </summary>
         /// <returns></returns>
         [OperationContract]
-        List<FunctionPermission> GetAllActionPermission();
+        List<Users> GetAllActionPermission();
 
         ///// <summary>
         ///// 

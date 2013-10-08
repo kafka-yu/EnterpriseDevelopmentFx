@@ -5,7 +5,5 @@ using System.Web;
 
 namespace NkjSoft.Web.UI.Services
 {
-    public class IUnitOfWork
-    {
-    }
+
 }

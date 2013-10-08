@@ -10,7 +10,7 @@ namespace NkjSoft.Core.Data.Configurations.Account
     /// <summary>
     /// 实体类-数据表映射——用户扩展信息
     /// </summary>    
-    internal partial class ProfilesConfiguration : EntityTypeConfiguration<Profiles>, IEntityMapper
+    public partial class ProfilesConfiguration : EntityTypeConfiguration<Profiles>, IEntityMapper
     {
         /// <summary>
         /// 实体类-数据表映射构造函数——用户扩展信息

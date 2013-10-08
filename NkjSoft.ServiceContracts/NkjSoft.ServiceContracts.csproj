@@ -66,10 +66,6 @@
       <Project>{f6ffe67f-a846-40f5-9bdf-907d1cb18f5b}</Project>
       <Name>NkjSoft.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NkjSoft.Model\NkjSoft.Model.csproj">
-      <Project>{889c10b0-4f27-4c1c-99d2-79876cf8a673}</Project>
-      <Name>NkjSoft.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

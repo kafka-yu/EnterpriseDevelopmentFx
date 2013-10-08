@@ -1,26 +1,31 @@
 ﻿
-using NkjSoft.Core.Models.Account;
-using NkjSoft.Framework.Data;
 using System;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Configuration;
 
-namespace NkjSoft.Core.Data.Configurations.Account
+using NkjSoft.Core.Models.Account;
+using NkjSoft.Framework.Data;
+
+
+namespace NkjSoft.Core.Data.Configurations.Systems
 {
-    public partial class MembershipsConfiguration : EntityTypeConfiguration<Memberships>, IEntityMapper
+    /// <summary>
+    /// 实体类-数据表映射——用户信息
+    /// </summary>    
+    public partial class ApplicationConfiguration : EntityTypeConfiguration<Applications>, IEntityMapper
     {
         /// <summary>
-        /// 实体类-数据表映射构造函数——用户扩展信息
+        /// 实体类-数据表映射构造函数——用户信息
         /// </summary>
-        public MembershipsConfiguration()
+        public ApplicationConfiguration()
         {
-            MembershipsConfigurationAppend();
+            ApplicationConfigurationAppend();
         }
 
         /// <summary>
         /// 额外的数据映射
         /// </summary>
-        partial void MembershipsConfigurationAppend();
+        partial void ApplicationConfigurationAppend();
 
         /// <summary>
         /// 将当前实体映射对象注册到当前数据访问上下文实体映射配置注册器中

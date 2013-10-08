@@ -18,4 +18,12 @@ namespace NkjSoft.Framework
             this.rows = data;
         }
     }
+
+    public static class extensions
+    {
+        public static PageList<T> AsPagedList<T>(this ICollection<T> obj, int totalRows)
+        {
+            return new PageList<T>(totalRows, obj);
+        }
+    }
 }

@@ -12,7 +12,7 @@ namespace NkjSoft.Core.Data.Configurations.Account
     /// <summary>
     /// 实体类-数据表映射——用户信息
     /// </summary>    
-    internal partial class UsersConfiguration : EntityTypeConfiguration<Users>, IEntityMapper
+    public partial class UsersConfiguration : EntityTypeConfiguration<Users>, IEntityMapper
     {
         /// <summary>
         /// 实体类-数据表映射构造函数——用户信息

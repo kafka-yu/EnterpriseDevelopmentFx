@@ -17,6 +17,12 @@ namespace NkjSoft.Core.Models.Account
 
     public partial class Profiles : EntityBase<Guid>
     {
+        public Profiles()
+        {
+            UserId = GuidGenerator.NewComb();
+        }
+
+        [Key]
         public System.Guid UserId { get; set; }
         public string PropertyNames { get; set; }
         public string PropertyValueStrings { get; set; }

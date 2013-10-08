@@ -4,11 +4,11 @@ using System.Data.Entity.ModelConfiguration.Configuration;
 
 namespace NkjSoft.Core.Data.Configurations.Account
 {
-    partial class LoginLogConfiguration
+    public partial class LoginLogConfiguration
     {
         partial void LoginLogConfigurationAppend()
         {
-            HasRequired(m => m.Member).WithMany(n => n.LoginLogs);
+            //HasRequired(m => m.Member).WithMany(n => n.LoginLogs);
         }
     }
 }

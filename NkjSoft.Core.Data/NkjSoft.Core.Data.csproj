@@ -56,6 +56,10 @@
     <Compile Include="Configurations\Security\RoleConfiguration.cs" />
     <Compile Include="Configurations\Security\RoleConfiguration.generated.cs" />
     <Compile Include="Configurations\Systems\LogInfoConfiguration.generated.cs" />
+    <Compile Include="Configurations\Systems\ApplicationConfiguration.cs" />
+    <Compile Include="Configurations\Systems\ApplicationConfiguration.generated.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\DatabaseInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Account\ILoginLogRepository.generated.cs" />
     <Compile Include="Repositories\Account\IProfilesRepository.generated.cs" />

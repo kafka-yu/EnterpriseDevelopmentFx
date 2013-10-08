@@ -10,7 +10,7 @@ namespace NkjSoft.Core.Data.Configurations.Account
     /// <summary>
     /// 实体类-数据表映射——登录记录信息
     /// </summary>    
-    internal partial class LoginLogConfiguration : EntityTypeConfiguration<LoginLog>, IEntityMapper
+    public partial class LoginLogConfiguration : EntityTypeConfiguration<LoginLog>, IEntityMapper
     {
         /// <summary>
         /// 实体类-数据表映射构造函数——登录记录信息

@@ -50,5 +50,7 @@ namespace NkjSoft.Framework.IoC
         }
 
         #endregion
+
+        public static MefDependencySolver Current { get; set; }
     }
 }

@@ -7,11 +7,18 @@ using System.Text;
 
 namespace NkjSoft.Core.Data.Configurations.Account
 {
-    partial class ProfilesConfiguration
+    public partial class ProfilesConfiguration
     {
         partial void ProfilesConfigurationAppend()
         {
-            HasRequired(m => m.Users).WithOptional(n => n.Profiles);
+            this.HasKey(t => t.UserId);
+            this.ToTable("Profiles");
+            this.Property(t => t.UserId).HasColumnName("UserId");
+            this.Property(t => t.PropertyNames).HasColumnName("PropertyNames").IsRequired().HasMaxLength(4000);
+            this.Property(t => t.PropertyValueStrings).HasColumnName("PropertyValueStrings").IsRequired().HasMaxLength(4000);
+            this.Property(t => t.PropertyValueBinary).HasColumnName("PropertyValueBinary").IsRequired();
+            this.Property(t => t.LastUpdatedDate).HasColumnName("LastUpdatedDate");
+            this.HasRequired(t => t.Users).WithOptional(t => t.Profiles);
         }
     }
 }

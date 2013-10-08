@@ -17,8 +17,14 @@ namespace NkjSoft.Core.Models.Account
 
     public partial class Memberships : EntityBase<Guid>
     {
+        public Memberships()
+        {
+            UserId = GuidGenerator.NewComb();
+        }
+
         public System.Guid ApplicationId { get; set; }
 
+        [Key]
         public System.Guid UserId { get; set; }
         public string Password { get; set; }
         public int PasswordFormat { get; set; }
@@ -42,7 +48,7 @@ namespace NkjSoft.Core.Models.Account
 
         public virtual Users Users { get; set; }
 
-        public ICollection<LoginLog> LoginLogs { get; set; }
+        //public ICollection<LoginLog> LoginLogs { get; set; }
 
         public override Guid __KeyId
         {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using NkjSoft.Model;
 
 using Ninject;
 using NkjSoft.ServiceContracts.Core.Account;
@@ -62,15 +61,15 @@ namespace NkjSoft.Web.UI.Lib
                 return false;//判定用户是否登录
             }
 
-            var user = new CurrentUser()
-            {
-                UserName = filterContext.HttpContext.User.Identity.Name,
-            };//获取当前用户信息
+            //var user = new CurrentUser()
+            //{
+            //    UserName = filterContext.HttpContext.User.Identity.Name,
+            //};//获取当前用户信息
 
-            var buttons = service.GetAllActionPermission();
+            //var buttons = service.GetAllActionPermission();
 
-            var controllerName = filterContext.RouteData.Values["controller"].ToString();
-            var actionName = filterContext.RouteData.Values["action"].ToString();
+            //var controllerName = filterContext.RouteData.Values["controller"].ToString();
+            //var actionName = filterContext.RouteData.Values["action"].ToString();
 
             //var helper = new UserLogonHelper(user);
 

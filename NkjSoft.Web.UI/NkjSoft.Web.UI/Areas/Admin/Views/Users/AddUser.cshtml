@@ -46,11 +46,11 @@
 
     function _initGrid() {
         initialDataGrid([[
-            { field: 'Action', title: '名', width: 80 },
-           { field: 'Controller', width: 80, align: 'right' },
-           { field: 'Phone', title: '手机', width: 50 },
+            { field: 'UserName', title: '名', width: 80 },
+           { field: 'ApplicationId', title: 'ApplicationId',width: 80, align: 'right' },
+           { field: 'Email', title: 'Email', width: 50 },
            {
-               field: 'Text', title: 'Text', width: 200, formatter: function (val, row, index) {
+               field: 'UserId', title: 'Id', width: 200, formatter: function (val, row, index) {
                    return '<a href="javascript:void(0);" class="removeBtn">asdfasdfasdfasdf' + index + '</a>';
                }
            }]], { multipleSelect: true });
@@ -73,10 +73,10 @@
             type: "POST",
             url: "@Url.Action("GetUsers", "Users", new { area = "Admin" })",
             data: {
-                queryParams: [{
+                queryParams: $.toJSON([{
                     Field1: "2",
                     Field2: "2"
-                }],
+                }]),
                 ids: ["2,3,6", "3423"],
                 page: 1,
                 rows: 5
@@ -84,7 +84,7 @@
             dataType: "json",
             traditional: true,
             success: function (e) {
-                alert(e);
+                alert($.toJSON(e));
             }
         });
     }

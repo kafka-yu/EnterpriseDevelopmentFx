@@ -110,9 +110,9 @@ namespace NkjSoft.ServiceContracts.Impl.Account
             return new OperationResult(OperationResultType.Success, "登录成功。", member);
         }
 
-        public List<Model.FunctionPermission> GetAllActionPermission()
+        public List<Users> GetAllActionPermission()
         {
-            return new List<Model.FunctionPermission>();
+            return new List<Users>();
         }
     }
 }

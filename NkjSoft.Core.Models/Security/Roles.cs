@@ -21,10 +21,12 @@ namespace NkjSoft.Core.Models.Security
         public Roles()
         {
             this.Users = new HashSet<Users>();
+            RoleId = GuidGenerator.NewComb();
         }
 
         public System.Guid ApplicationId { get; set; }
 
+        [Key]
         public System.Guid RoleId { get; set; }
         public string RoleName { get; set; }
         public string Description { get; set; }
