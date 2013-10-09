@@ -33,6 +33,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1B390557-3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFTest", "Test\MEFTest\MEFTest.csproj", "{C83103FD-BA25-41BD-83F4-BDB0BC1BBBC5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{38C1A582-4333-48FF-BD8F-FBE882DEB9D7}"
+	ProjectSection(SolutionItems) = preProject
+		NkjSoft.Doc\dbo.Menu.sql = NkjSoft.Doc\dbo.Menu.sql
+		NkjSoft.Doc\dbo.MenusInRoles.sql = NkjSoft.Doc\dbo.MenusInRoles.sql
+		NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.2.doc = NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.2.doc
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
