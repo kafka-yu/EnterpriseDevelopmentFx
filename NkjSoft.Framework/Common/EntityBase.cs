@@ -31,18 +31,30 @@ namespace NkjSoft.Framework.Common
         [NotMapped]
         public abstract TKey __KeyId { get; }
 
-        ///// <summary>
-        /////     获取或设置 获取或设置是否禁用，逻辑上的删除，非物理删除
-        ///// </summary>
-        //public bool IsDeleted { get; set; }
+        /// <summary>
+        ///     获取或设置 获取或设置是否禁用，逻辑上的删除，非物理删除
+        /// </summary>
+        public bool IsDeleted { get; set; }
 
-        ///// <summary>
-        /////     获取或设置 添加时间
-        ///// </summary>
-        //[DataType(System.ComponentModel.DataAnnotations.DataType.DateTime)]
-        //public DateTime AddDate { get; set; }
+        /// <summary>
+        ///     获取或设置 添加时间
+        /// </summary>
+        [DataType(System.ComponentModel.DataAnnotations.DataType.DateTime)]
+        public DateTime AddDate { get; set; }
+
+        public RecordStatus Status { get; set; }
 
         #endregion
+    }
+
+    public enum RecordStatus
+    {
+        Passed = 1,
+        Failed = 2,
+        Freezed = 3,
+        Deleted = 4,
+        Disabled = 5,
+        Enabled = 6,
     }
 
     /// <summary>
