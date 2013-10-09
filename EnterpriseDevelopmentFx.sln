@@ -38,6 +38,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{38C1A582-433
 		NkjSoft.Doc\dbo.Menu.sql = NkjSoft.Doc\dbo.Menu.sql
 		NkjSoft.Doc\dbo.MenusInRoles.sql = NkjSoft.Doc\dbo.MenusInRoles.sql
 		NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.2.doc = NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.2.doc
+		NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.3.doc = NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.3.doc
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database.Design", "Database.Design", "{F65F565E-3ADA-4EED-AC06-F6BE9EE65A91}"
