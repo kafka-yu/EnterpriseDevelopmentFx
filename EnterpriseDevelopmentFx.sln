@@ -40,6 +40,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{38C1A582-433
 		NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.2.doc = NkjSoft.Doc\福建职业培训网站-用户需求说明书-V1.2.doc
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database.Design", "Database.Design", "{F65F565E-3ADA-4EED-AC06-F6BE9EE65A91}"
+	ProjectSection(SolutionItems) = preProject
+		NkjSoft.Doc\Database.Design\打开笔记本.onetoc2 = NkjSoft.Doc\Database.Design\打开笔记本.onetoc2
+		NkjSoft.Doc\Database.Design\数据库草稿.one = NkjSoft.Doc\Database.Design\数据库草稿.one
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -164,5 +170,6 @@ Global
 		{479EC57D-4C1E-4A78-823A-57F597AC3ED5} = {231B5B8C-E2AC-44D3-A968-D85A49CF7A64}
 		{288272D6-96ED-4F7D-AA70-A87034FD627A} = {E3FCA214-BD66-40B3-833A-66F28C133DD1}
 		{C83103FD-BA25-41BD-83F4-BDB0BC1BBBC5} = {1B390557-323D-4374-8C58-95D4287AB7CE}
+		{F65F565E-3ADA-4EED-AC06-F6BE9EE65A91} = {38C1A582-4333-48FF-BD8F-FBE882DEB9D7}
 	EndGlobalSection
 EndGlobal
