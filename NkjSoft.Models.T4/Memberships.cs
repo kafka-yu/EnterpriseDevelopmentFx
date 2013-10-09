@@ -34,6 +34,8 @@ namespace NkjSoft.Models.T4
         public int FailedPasswordAnswerAttemptCount { get; set; }
         public System.DateTime FailedPasswordAnswerAttemptWindowsStart { get; set; }
         public string Comment { get; set; }
+        public bool IsDeleted { get; set; }
+        public Nullable<System.DateTime> AddDate { get; set; }
     
         public virtual Applications Applications { get; set; }
         public virtual Users Users { get; set; }

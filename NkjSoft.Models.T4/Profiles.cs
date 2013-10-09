@@ -20,6 +20,12 @@ namespace NkjSoft.Models.T4
         public string PropertyValueStrings { get; set; }
         public byte[] PropertyValueBinary { get; set; }
         public System.DateTime LastUpdatedDate { get; set; }
+        public string Province { get; set; }
+        public string City { get; set; }
+        public string County { get; set; }
+        public string Street { get; set; }
+        public bool IsDeleted { get; set; }
+        public Nullable<System.DateTime> AddDate { get; set; }
     
         public virtual Users Users { get; set; }
     }

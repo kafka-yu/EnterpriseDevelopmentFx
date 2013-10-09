@@ -57,6 +57,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
     </Compile>
+    <Compile Include="LoginLogs.cs">
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Memberships.cs">
       <DependentUpon>Model1.Entities.tt</DependentUpon>
     </Compile>
