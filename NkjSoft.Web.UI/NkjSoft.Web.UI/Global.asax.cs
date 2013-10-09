@@ -1,7 +1,10 @@
-﻿using Kooboo.CMS.Common.Runtime;
+﻿using System.Web.Http;
+using System.Web.Optimization;
+using Kooboo.CMS.Common.Runtime;
 using NkjSoft.Core.Data.Migrations;
 using NkjSoft.Framework;
 using NkjSoft.Framework.IoC;
+using NkjSoft.Web.UI.App_Start;
 using NkjSoft.Web.UI.Models;
 using System;
 using System.Collections.Generic;
@@ -36,55 +39,19 @@ namespace NkjSoft.Web.UI
             }
         }
 
-
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
-        {
-            filters.Add(new HandleErrorAttribute());
-        }
-
-        public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                new string[] { "NkjSoft.Web.UI.Controllers" }
-            );
-
-        }
-
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             ModelBinders.Binders.DefaultBinder = new DefaultModelBinder();
 
             ModelBinders.Binders.Add(new KeyValuePair<Type, IModelBinder>(typeof(IEnumerable<QueryParameter>), new QueryParameterModelBinder()));
 
-            // Use LocalDB for Entity Framework by default
-            Database.DefaultConnectionFactory = new SqlConnectionFactory(@"Data Source=(localdb)\v11.0; Integrated Security=True; MultipleActiveResultSets=True");
-
-            // ControllerBuilder.Current.SetControllerFactory(new NkjSoft.Web.MVC.NinjectControllerFactory());
-
-            // KernelManager.Initialize(System.Configuration.ConfigurationManager
-            //.AppSettings["NinjectConfig"]);
-
-            //EngineContext.Current.Initialize();
-
-
-            RegisterGlobalFilters(GlobalFilters.Filters);
-            RegisterRoutes(RouteTable.Routes);
-
-            //设置MEF依赖注入容器
-            DirectoryCatalog catalog = new DirectoryCatalog(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath);
-            MefDependencySolver solver = new MefDependencySolver(catalog);
-            DependencyResolver.SetResolver(solver);
-
-            MefDependencySolver.Current = solver;
-
-            DatabaseInitializer.Initialize();
+            DependencyConfig.RegisterDependency();
         }
     }
 }
