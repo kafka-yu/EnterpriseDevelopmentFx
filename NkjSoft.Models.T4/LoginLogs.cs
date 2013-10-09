@@ -13,21 +13,14 @@ namespace NkjSoft.Models.T4
     using System;
     using System.Collections.Generic;
     
-    public partial class Roles
+    public partial class LoginLogs
     {
-        public Roles()
-        {
-            this.Users = new HashSet<Users>();
-        }
-    
-        public System.Guid ApplicationId { get; set; }
-        public System.Guid RoleId { get; set; }
-        public string RoleName { get; set; }
-        public string Description { get; set; }
+        public System.Guid Id { get; set; }
+        public string IpAddress { get; set; }
         public bool IsDeleted { get; set; }
         public Nullable<System.DateTime> AddDate { get; set; }
+        public Nullable<System.Guid> Member_UserId { get; set; }
     
-        public virtual Applications Applications { get; set; }
-        public virtual ICollection<Users> Users { get; set; }
+        public virtual Users Users { get; set; }
     }
 }

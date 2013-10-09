@@ -20,8 +20,8 @@ namespace NkjSoft.Framework.Common
         /// </summary>
         protected EntityBase()
         {
-            //IsDeleted = false;
-            //AddDate = DateTime.Now;
+            IsDeleted = false;
+            AddDate = DateTime.Now;
         }
 
         #endregion
@@ -34,14 +34,15 @@ namespace NkjSoft.Framework.Common
         /// <summary>
         ///     获取或设置 获取或设置是否禁用，逻辑上的删除，非物理删除
         /// </summary>
-        public bool IsDeleted { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
 
         /// <summary>
         ///     获取或设置 添加时间
         /// </summary>
         [DataType(System.ComponentModel.DataAnnotations.DataType.DateTime)]
-        public DateTime AddDate { get; set; }
+        public Nullable<DateTime> AddDate { get; set; }
 
+        [EnumDataType(typeof(RecordStatus))]
         public RecordStatus Status { get; set; }
 
         #endregion

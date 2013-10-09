@@ -18,6 +18,7 @@ namespace NkjSoft.Models.T4
         public Users()
         {
             this.Roles = new HashSet<Roles>();
+            this.LoginLogs = new HashSet<LoginLogs>();
         }
     
         public System.Guid ApplicationId { get; set; }
@@ -25,10 +26,13 @@ namespace NkjSoft.Models.T4
         public string UserName { get; set; }
         public bool IsAnonymous { get; set; }
         public System.DateTime LastActivityDate { get; set; }
+        public bool IsDeleted { get; set; }
+        public Nullable<System.DateTime> AddDate { get; set; }
     
         public virtual Applications Applications { get; set; }
         public virtual Memberships Memberships { get; set; }
         public virtual Profiles Profiles { get; set; }
         public virtual ICollection<Roles> Roles { get; set; }
+        public virtual ICollection<LoginLogs> LoginLogs { get; set; }
     }
 }

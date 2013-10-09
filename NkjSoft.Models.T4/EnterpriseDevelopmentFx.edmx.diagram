@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="85f8284a47f946d49f909a38fc00c84b" Name="Diagram1">
+      <Diagram DiagramId="85f8284a47f946d49f909a38fc00c84b" Name="Diagram1" ZoomLevel="70">
         <EntityTypeShape EntityType="NkjSoft.Model.Applications" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
         <EntityTypeShape EntityType="NkjSoft.Model.Memberships" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
         <EntityTypeShape EntityType="NkjSoft.Model.Menu" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
@@ -18,6 +18,8 @@
         <AssociationConnector Association="NkjSoft.Model.MembershipUser" ManuallyRouted="false" />
         <AssociationConnector Association="NkjSoft.Model.UserProfile" ManuallyRouted="false" />
         <AssociationConnector Association="NkjSoft.Model.UsersInRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="NkjSoft.Model.LoginLogs" Width="1.5" PointX="10.358049406836765" PointY="1.3163758820464722" />
+        <AssociationConnector Association="NkjSoft.Model.FK_dbo_LoginLogs_dbo_Users_Member_UserId" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
