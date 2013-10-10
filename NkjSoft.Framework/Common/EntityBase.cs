@@ -42,9 +42,18 @@ namespace NkjSoft.Framework.Common
         [DataType(System.ComponentModel.DataAnnotations.DataType.DateTime)]
         public Nullable<DateTime> AddDate { get; set; }
 
-        [EnumDataType(typeof(RecordStatus))]
-        public RecordStatus Status { get; set; }
+        [Column("Status")]
+        public Nullable<int> StatusNum { get; set; }
 
+        /// <summary>
+        /// 获取或设置 角色类型
+        /// </summary>
+        [NotMapped]
+        public RecordStatus Status
+        {
+            get { return (RecordStatus)StatusNum; }
+            set { StatusNum = (int)value; }
+        }
         #endregion
     }
 

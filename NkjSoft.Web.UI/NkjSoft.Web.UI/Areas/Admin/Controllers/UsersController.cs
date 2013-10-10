@@ -1,6 +1,7 @@
 ﻿using Kooboo.CMS.Common.Runtime;
 using NkjSoft.Core.Data.Repositories.Account;
 using NkjSoft.Core.Models.Account;
+using NkjSoft.Core.Models.Security;
 using NkjSoft.Framework;
 using NkjSoft.Framework.IoC;
 using NkjSoft.Web.UI.Models;
@@ -78,12 +79,24 @@ namespace NkjSoft.Web.UI.Areas.Admin.Controllers
                 Name = p.UserName
             })
             .ToList();
+            var count = repo.Entities.Count();
 
+            //var tt = repo.Set<ActionDefinition>()
+            //    .ToList()
+            //    .Select(p => new
+            //    {
+            //        Name = p.Text,
+            //        UserId = p.Id,
+            //        Email = p.ParentNode != null ? p.ParentNode.Text : "None",
+            //        FK = p.ParentNode_Id,
+            //    })
+            //    .ToList();
+            //var count = 10;
             //var result = testData.Skip((page.GetValueOrDefault() - 1) * rows.GetValueOrDefault())
             //    .Take(rows.GetValueOrDefault())
             //    .ToList();
 
-            return Json(tt.AsPagedList(repo.Entities.Count()), JsonRequestBehavior.AllowGet);
+            return Json(tt.AsPagedList(count), JsonRequestBehavior.AllowGet);
         }
     }
 

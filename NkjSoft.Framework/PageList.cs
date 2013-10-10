@@ -21,7 +21,7 @@ namespace NkjSoft.Framework
 
     public static class extensions
     {
-        public static PageList<T> AsPagedList<T>(this ICollection<T> obj, int totalRows)
+        public static PageList<T> AsPagedList<T>(this ICollection<T> obj, int totalRows = 1)
         {
             return new PageList<T>(totalRows, obj);
         }

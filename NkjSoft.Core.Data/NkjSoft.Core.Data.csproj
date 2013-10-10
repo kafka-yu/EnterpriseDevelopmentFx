@@ -53,6 +53,8 @@
     <Compile Include="Configurations\Account\UsersConfiguration.generated.cs" />
     <Compile Include="Configurations\Account\ProfilesConfiguration.cs" />
     <Compile Include="Configurations\Account\ProfilesConfiguration.generated.cs" />
+    <Compile Include="Configurations\Security\ActionDefinitionConfiguration.cs" />
+    <Compile Include="Configurations\Security\ActionDefinitionConfiguration.generated.cs" />
     <Compile Include="Configurations\Security\RoleConfiguration.cs" />
     <Compile Include="Configurations\Security\RoleConfiguration.generated.cs" />
     <Compile Include="Configurations\Systems\LogInfoConfiguration.generated.cs" />

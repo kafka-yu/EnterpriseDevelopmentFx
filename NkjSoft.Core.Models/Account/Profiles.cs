@@ -29,8 +29,6 @@ namespace NkjSoft.Core.Models.Account
         public byte[] PropertyValueBinary { get; set; }
         public System.DateTime LastUpdatedDate { get; set; }
 
-        public MemberAddress Address { get; set; }
-
         public virtual Users Users { get; set; }
 
         public override Guid __KeyId
