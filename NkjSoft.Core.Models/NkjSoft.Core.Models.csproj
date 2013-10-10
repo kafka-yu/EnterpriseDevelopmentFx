@@ -51,8 +51,9 @@
     <Compile Include="Account\LoginLog.cs" />
     <Compile Include="Account\MemberAddress.cs" />
     <Compile Include="Account\Memberships.cs" />
-    <Compile Include="Security\Menu.cs" />
     <Compile Include="Account\Profiles.cs" />
+    <Compile Include="Security\ActionDefinition.additional.cs" />
+    <Compile Include="Security\ActionDefinition.cs" />
     <Compile Include="Security\Roles.cs" />
     <Compile Include="Account\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
