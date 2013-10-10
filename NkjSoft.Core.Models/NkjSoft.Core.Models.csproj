@@ -56,6 +56,12 @@
     <Compile Include="Business\AdvisoryShow\AdvisoryCategory.cs" />
     <Compile Include="Business\AdvisoryShow\AdvisoryComment.cs" />
     <Compile Include="Business\AdvisoryShow\AdvisoryType.cs" />
+    <Compile Include="Business\Certificate.cs" />
+    <Compile Include="Business\ContactInfo.cs" />
+    <Compile Include="Business\Industry.cs" />
+    <Compile Include="Business\Region.cs" />
+    <Compile Include="Business\SiteImage.cs" />
+    <Compile Include="Business\TrainingInstitutions.cs" />
     <Compile Include="Security\ActionDefinition.additional.cs" />
     <Compile Include="Security\ActionDefinition.cs" />
     <Compile Include="Security\Roles.cs" />
