@@ -25,6 +25,9 @@ namespace NkjSoft.Core.Models.Security
         }
 
         public string Text { get; set; }
+
+        public string Code { get; set; }
+
         public string Area { get; set; }
         public string ActionName { get; set; }
         public string Controller { get; set; }
