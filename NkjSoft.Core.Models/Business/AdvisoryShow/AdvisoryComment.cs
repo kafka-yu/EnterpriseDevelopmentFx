@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NkjSoft.Core.Models.Business.AdvisoryShow
 {
-    class AdvisoryComment
+    public class AdvisoryComment
     {
     }
 }
