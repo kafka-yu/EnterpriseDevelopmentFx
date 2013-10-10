@@ -25,6 +25,14 @@ namespace NkjSoft.Core.Data.Configurations.Security
                     m.MapLeftKey("RoleId");
                     m.MapRightKey("UserId");
                 });
+
+            this.HasMany(t => t.Permissions).WithMany(t => t.Roles)
+                .Map(m =>
+                {
+                    m.ToTable("RolePermissions");
+                    m.MapLeftKey("RoleId");
+                    m.MapRightKey("PermissionId");
+                });
         }
     }
 }

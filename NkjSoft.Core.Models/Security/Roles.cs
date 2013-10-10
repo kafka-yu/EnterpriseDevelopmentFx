@@ -35,6 +35,8 @@ namespace NkjSoft.Core.Models.Security
 
         public virtual ICollection<Users> Users { get; set; }
 
+        public virtual ICollection<ActionDefinition> Permissions { get; set; }
+
         public override Guid __KeyId
         {
             get { return this.RoleId; }

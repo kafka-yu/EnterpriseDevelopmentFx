@@ -69,5 +69,6 @@ namespace NkjSoft.Core.Models.Security
             : this(text, showAsMenu, icon, parentNode)
         {
         }
+
     }
 }

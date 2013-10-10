@@ -21,6 +21,7 @@ namespace NkjSoft.Core.Models.Security
         {
             Id = Guid.NewGuid();
             ShowAsMenu = false;
+            this.Roles = new HashSet<Roles>();
         }
 
         public string Text { get; set; }
@@ -40,5 +41,7 @@ namespace NkjSoft.Core.Models.Security
 
         [ForeignKey("ParentNode_Id")]
         public ActionDefinition ParentNode { get; set; }
+
+        public ICollection<Roles> Roles { get; set; }
     }
 }
