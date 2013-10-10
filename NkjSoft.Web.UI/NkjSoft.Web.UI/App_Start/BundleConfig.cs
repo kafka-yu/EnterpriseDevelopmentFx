@@ -1,5 +1,7 @@
 using System.Web.Optimization;
 
+using NkjSoft.Framework.Extensions;
+
 namespace NkjSoft.Web.UI.App_Start
 {
     public static class BundleConfig
@@ -12,11 +14,13 @@ namespace NkjSoft.Web.UI.App_Start
 
         private static void RegisterStyleBundles(BundleCollection bundles)
         {
+            var theme = "metro";
             bundles.Add(new StyleBundle("~/Content/Admin")
                   .Include("~/Content/default.css")
                   .Include("~/Content/themes/icon.css")
-                  .Include("~/Content/themes/default/easyui.css")
-                  .Include("~/Content/easyui.modify.css"));
+                  .Include("~/Content/themes/{0}/easyui.css"
+                  .FormatWith(theme))
+                  .Include("~/Content/easyui.{0}.modify.css".FormatWith(theme)));
 
             bundles.Add(new StyleBundle("~/Content/LogOn")
                 .Include("~/Content/bootstrap.css")

@@ -98,6 +98,7 @@
     <Compile Include="Common\PublicHelper.cs" />
     <Compile Include="Common\DataAccessException.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="IoC\IComponentContext.cs" />
     <Compile Include="IoC\MefDependencySolver.cs" />

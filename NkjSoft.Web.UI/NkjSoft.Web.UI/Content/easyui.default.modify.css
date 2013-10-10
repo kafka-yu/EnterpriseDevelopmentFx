@@ -120,6 +120,11 @@ a:hover.easyui-linkbutton-metro-plain {
     color:#0078B1;
 }
 
-.datagrid-row-selected a {
+/*.datagrid-row-selected {
+    background-color:#0078B1;
+}*/
+
+
+/*.datagrid-row-selected a {
     color:white;
-}
+}*/
