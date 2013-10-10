@@ -1,4 +1,5 @@
-﻿using NkjSoft.Framework.Data;
+﻿using NkjSoft.Core.Models.Security;
+using NkjSoft.Framework.Data;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -18,6 +19,17 @@ namespace NkjSoft.Core.Data.Migrations
 
         protected override void Seed(EFDbContext context)
         {
+            // default actionDefinitions.
+            var defaultActionDefinitions = new List<ActionDefinition>();
+
+            var adminMgrRoot = new ActionDefinition("系统管理", true);
+
+            // permissionMgr 
+            var permission = new ActionDefinition("权限定义", adminMgrRoot, true);
+
+            defaultActionDefinitions.Add(adminMgrRoot);
+            defaultActionDefinitions.Add(permission);
+
             //List<Role> roles = new List<Role>
             //{
             //    new Role{ Name = "系统管理", Description = "系统管理角色，拥有整个系统的管理权限。", RoleType = RoleType.Admin},
