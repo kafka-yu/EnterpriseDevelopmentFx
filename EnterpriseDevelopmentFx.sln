@@ -47,6 +47,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database.Design", "Database
 		NkjSoft.Doc\Database.Design\数据库草稿.one = NkjSoft.Doc\Database.Design\数据库草稿.one
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site.FrontEnd.Html", "Site.FrontEnd.Html", "{91978D1B-31E4-48DD-BC11-620C5C4ECBE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvistoryTrainingSite", "AdvistoryTraining\AdvistoryTrainingSite\AdvistoryTrainingSite.csproj", "{8BA44E26-9624-4B09-8F70-EAD01C191D9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +161,16 @@ Global
 		{C83103FD-BA25-41BD-83F4-BDB0BC1BBBC5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C83103FD-BA25-41BD-83F4-BDB0BC1BBBC5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C83103FD-BA25-41BD-83F4-BDB0BC1BBBC5}.Release|x86.ActiveCfg = Release|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,5 +186,6 @@ Global
 		{288272D6-96ED-4F7D-AA70-A87034FD627A} = {E3FCA214-BD66-40B3-833A-66F28C133DD1}
 		{C83103FD-BA25-41BD-83F4-BDB0BC1BBBC5} = {1B390557-323D-4374-8C58-95D4287AB7CE}
 		{F65F565E-3ADA-4EED-AC06-F6BE9EE65A91} = {38C1A582-4333-48FF-BD8F-FBE882DEB9D7}
+		{8BA44E26-9624-4B09-8F70-EAD01C191D9F} = {91978D1B-31E4-48DD-BC11-620C5C4ECBE8}
 	EndGlobalSection
 EndGlobal
