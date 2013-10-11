@@ -17,9 +17,10 @@ namespace NkjSoft.Models.T4
     {
         public System.Guid Id { get; set; }
         public string IpAddress { get; set; }
-        public bool IsDeleted { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> AddDate { get; set; }
         public Nullable<System.Guid> Member_UserId { get; set; }
+        public Nullable<int> Status { get; set; }
     
         public virtual Users Users { get; set; }
     }

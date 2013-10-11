@@ -13,22 +13,29 @@ namespace NkjSoft.Models.T4
     using System;
     using System.Collections.Generic;
     
-    public partial class Roles
+    public partial class ActionDefinition
     {
-        public Roles()
+        public ActionDefinition()
         {
-            this.Users = new HashSet<Users>();
+            this.ActionDefinition1 = new HashSet<ActionDefinition>();
         }
     
-        public System.Guid ApplicationId { get; set; }
-        public System.Guid RoleId { get; set; }
-        public string RoleName { get; set; }
+        public System.Guid Id { get; set; }
+        public string Text { get; set; }
+        public string Area { get; set; }
+        public string ActionName { get; set; }
+        public string Controller { get; set; }
+        public string Url { get; set; }
         public string Description { get; set; }
+        public string Icon { get; set; }
+        public bool ShowAsMenu { get; set; }
+        public string Style { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> AddDate { get; set; }
         public Nullable<int> Status { get; set; }
+        public Nullable<System.Guid> ParentNode_Id { get; set; }
     
-        public virtual Applications Applications { get; set; }
-        public virtual ICollection<Users> Users { get; set; }
+        public virtual ICollection<ActionDefinition> ActionDefinition1 { get; set; }
+        public virtual ActionDefinition ActionDefinition2 { get; set; }
     }
 }

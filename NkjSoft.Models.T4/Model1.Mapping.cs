@@ -19,6 +19,41 @@ namespace NkjSoft.Models.T4
     using System.Data.Entity.ModelConfiguration;
     using System.Data.Entity.Infrastructure;
     
+    internal partial class ActionDefinition_Mapping : EntityTypeConfiguration<ActionDefinition>
+    {
+        public ActionDefinition_Mapping()
+        {                        
+              this.HasKey(t => t.Id);        
+              this.ToTable("ActionDefinition");
+              this.Property(t => t.Id).HasColumnName("Id");
+              this.Property(t => t.Text).HasColumnName("Text");
+              this.Property(t => t.Area).HasColumnName("Area");
+              this.Property(t => t.ActionName).HasColumnName("ActionName").HasMaxLength(256);
+              this.Property(t => t.Controller).HasColumnName("Controller").HasMaxLength(256);
+              this.Property(t => t.Url).HasColumnName("Url");
+              this.Property(t => t.Description).HasColumnName("Description").HasMaxLength(256);
+              this.Property(t => t.Icon).HasColumnName("Icon");
+              this.Property(t => t.ShowAsMenu).HasColumnName("ShowAsMenu");
+              this.Property(t => t.Style).HasColumnName("Style");
+              this.Property(t => t.IsDeleted).HasColumnName("IsDeleted");
+              this.Property(t => t.AddDate).HasColumnName("AddDate");
+              this.Property(t => t.Status).HasColumnName("Status");
+              this.Property(t => t.ParentNode_Id).HasColumnName("ParentNode_Id");
+              this.HasOptional(t => t.ActionDefinition2).WithMany(t => t.ActionDefinition1).HasForeignKey(d => d.ParentNode_Id);
+         }
+    }
+}
+namespace NkjSoft.Models.T4
+{
+    #pragma warning disable 1573
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Common;
+    using System.Data.Entity;
+    using System.Data.Entity.ModelConfiguration;
+    using System.Data.Entity.Infrastructure;
+    
     internal partial class Applications_Mapping : EntityTypeConfiguration<Applications>
     {
         public Applications_Mapping()
@@ -30,6 +65,7 @@ namespace NkjSoft.Models.T4
               this.Property(t => t.Description).HasColumnName("Description").HasMaxLength(256);
               this.Property(t => t.IsDeleted).HasColumnName("IsDeleted");
               this.Property(t => t.AddDate).HasColumnName("AddDate");
+              this.Property(t => t.Status).HasColumnName("Status");
          }
     }
 }
@@ -55,6 +91,7 @@ namespace NkjSoft.Models.T4
               this.Property(t => t.IsDeleted).HasColumnName("IsDeleted");
               this.Property(t => t.AddDate).HasColumnName("AddDate");
               this.Property(t => t.Member_UserId).HasColumnName("Member_UserId");
+              this.Property(t => t.Status).HasColumnName("Status");
               this.HasOptional(t => t.Users).WithMany(t => t.LoginLogs).HasForeignKey(d => d.Member_UserId);
          }
     }
@@ -97,6 +134,7 @@ namespace NkjSoft.Models.T4
               this.Property(t => t.Comment).HasColumnName("Comment").HasMaxLength(256);
               this.Property(t => t.IsDeleted).HasColumnName("IsDeleted");
               this.Property(t => t.AddDate).HasColumnName("AddDate");
+              this.Property(t => t.Status).HasColumnName("Status");
               this.HasRequired(t => t.Applications).WithMany(t => t.Memberships).HasForeignKey(d => d.ApplicationId);
               this.HasRequired(t => t.Users).WithOptional(t => t.Memberships);
          }

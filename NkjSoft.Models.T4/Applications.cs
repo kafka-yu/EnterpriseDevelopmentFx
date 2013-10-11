@@ -25,8 +25,9 @@ namespace NkjSoft.Models.T4
         public string ApplicationName { get; set; }
         public System.Guid ApplicationId { get; set; }
         public string Description { get; set; }
-        public bool IsDeleted { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> AddDate { get; set; }
+        public Nullable<int> Status { get; set; }
     
         public virtual ICollection<Memberships> Memberships { get; set; }
         public virtual ICollection<Roles> Roles { get; set; }

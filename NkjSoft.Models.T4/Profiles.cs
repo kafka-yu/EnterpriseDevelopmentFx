@@ -24,8 +24,9 @@ namespace NkjSoft.Models.T4
         public string City { get; set; }
         public string County { get; set; }
         public string Street { get; set; }
-        public bool IsDeleted { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> AddDate { get; set; }
+        public Nullable<int> Status { get; set; }
     
         public virtual Users Users { get; set; }
     }

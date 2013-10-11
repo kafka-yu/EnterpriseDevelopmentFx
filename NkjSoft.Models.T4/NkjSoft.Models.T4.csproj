@@ -46,20 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionDefinition.cs">
+      <DependentUpon>Model1.Entities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Applications.cs">
       <DependentUpon>Model1.Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Applications_Mapping.cs">
       <DependentUpon>Model1.Mapping.tt</DependentUpon>
     </Compile>
+    <Compile Include="Configurations.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Configurations.tt</DependentUpon>
+    </Compile>
     <Compile Include="EnterpriseDevelopmentFx.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Include\Configuration.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Configuration.tt</DependentUpon>
+    </Compile>
     <Compile Include="LoginLogs.cs">
       <DependentUpon>Model1.Entities.tt</DependentUpon>
     </Compile>
+    <Compile Include="LoginLogs_Mapping.cs" />
     <Compile Include="Memberships.cs">
       <DependentUpon>Model1.Entities.tt</DependentUpon>
     </Compile>
@@ -119,8 +133,16 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EnterpriseDevelopmentFx.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Configurations.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Configurations.cs</LastGenOutput>
+    </None>
     <None Include="EnterpriseDevelopmentFx.edmx.diagram">
       <DependentUpon>EnterpriseDevelopmentFx.edmx</DependentUpon>
+    </None>
+    <None Include="Include\Configuration.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Configuration.cs</LastGenOutput>
     </None>
     <None Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

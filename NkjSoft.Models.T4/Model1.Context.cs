@@ -42,6 +42,7 @@ namespace NkjSoft.Models.T4
     	}
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {		
+    		modelBuilder.Configurations.Add(new ActionDefinition_Mapping());
     		modelBuilder.Configurations.Add(new Applications_Mapping());
     		modelBuilder.Configurations.Add(new LoginLogs_Mapping());
     		modelBuilder.Configurations.Add(new Memberships_Mapping());
@@ -60,5 +61,6 @@ namespace NkjSoft.Models.T4
         public DbSet<Roles> Roles { get; set; }
         public DbSet<Users> Users { get; set; }
         public DbSet<LoginLogs> LoginLogs { get; set; }
+        public DbSet<ActionDefinition> ActionDefinition { get; set; }
     }
 }

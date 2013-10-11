@@ -6,6 +6,7 @@
     <edmx:StorageModels>
     <Schema Namespace="NkjSoft.Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="NkjSoftModelStoreContainer">
+          <EntitySet Name="ActionDefinition" EntityType="NkjSoft.Model.Store.ActionDefinition" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Applications" EntityType="NkjSoft.Model.Store.Applications" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="LoginLogs" EntityType="NkjSoft.Model.Store.LoginLogs" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Memberships" EntityType="NkjSoft.Model.Store.Memberships" store:Type="Tables" Schema="dbo" />
@@ -13,6 +14,10 @@
           <EntitySet Name="Roles" EntityType="NkjSoft.Model.Store.Roles" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Users" EntityType="NkjSoft.Model.Store.Users" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="UsersInRoles" EntityType="NkjSoft.Model.Store.UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id" Association="NkjSoft.Model.Store.FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id">
+            <End Role="ActionDefinition" EntitySet="ActionDefinition" />
+            <End Role="ActionDefinition1" EntitySet="ActionDefinition" />
+          </AssociationSet>
           <AssociationSet Name="FK_dbo_LoginLogs_dbo_Users_Member_UserId" Association="NkjSoft.Model.Store.FK_dbo_LoginLogs_dbo_Users_Member_UserId">
             <End Role="Users" EntitySet="Users" />
             <End Role="LoginLogs" EntitySet="LoginLogs" />
@@ -46,6 +51,25 @@
             <End Role="UsersInRoles" EntitySet="UsersInRoles" />
           </AssociationSet>
         </EntityContainer>
+        <EntityType Name="ActionDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Text" Type="nvarchar(max)" />
+          <Property Name="Area" Type="nvarchar(max)" />
+          <Property Name="ActionName" Type="nvarchar" MaxLength="256" />
+          <Property Name="Controller" Type="nvarchar" MaxLength="256" />
+          <Property Name="Url" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+          <Property Name="Icon" Type="nvarchar(max)" />
+          <Property Name="ShowAsMenu" Type="bit" Nullable="false" />
+          <Property Name="Style" Type="nvarchar(max)" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="AddDate" Type="datetime" />
+          <Property Name="Status" Type="int" />
+          <Property Name="ParentNode_Id" Type="uniqueidentifier" />
+        </EntityType>
         <EntityType Name="Applications">
           <Key>
             <PropertyRef Name="ApplicationId" />
@@ -53,8 +77,9 @@
           <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="235" />
           <Property Name="Description" Type="nvarchar" MaxLength="256" />
-          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddDate" Type="datetime" />
+          <Property Name="Status" Type="int" />
         </EntityType>
         <EntityType Name="LoginLogs">
           <Key>
@@ -62,9 +87,10 @@
           </Key>
           <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="IpAddress" Type="nvarchar" Nullable="false" MaxLength="15" />
-          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddDate" Type="datetime" />
           <Property Name="Member_UserId" Type="uniqueidentifier" />
+          <Property Name="Status" Type="int" />
         </EntityType>
         <EntityType Name="Memberships">
           <Key>
@@ -89,8 +115,9 @@
           <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
           <Property Name="FailedPasswordAnswerAttemptWindowsStart" Type="datetime" Nullable="false" />
           <Property Name="Comment" Type="nvarchar" MaxLength="256" />
-          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddDate" Type="datetime" />
+          <Property Name="Status" Type="int" />
         </EntityType>
         <EntityType Name="Profiles">
           <Key>
@@ -101,12 +128,9 @@
           <Property Name="PropertyValueStrings" Type="nvarchar" Nullable="false" />
           <Property Name="PropertyValueBinary" Type="varbinary(max)" Nullable="false" />
           <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
-          <Property Name="Province" Type="nvarchar" MaxLength="20" />
-          <Property Name="City" Type="nvarchar" MaxLength="50" />
-          <Property Name="County" Type="nvarchar" MaxLength="50" />
-          <Property Name="Street" Type="nvarchar" MaxLength="200" />
-          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddDate" Type="datetime" />
+          <Property Name="Status" Type="int" />
         </EntityType>
         <EntityType Name="Roles">
           <Key>
@@ -116,8 +140,9 @@
           <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
           <Property Name="Description" Type="nvarchar" MaxLength="256" />
-          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddDate" Type="datetime" />
+          <Property Name="Status" Type="int" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -128,8 +153,9 @@
           <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="IsAnonymous" Type="bit" Nullable="false" />
           <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
-          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddDate" Type="datetime" />
+          <Property Name="Status" Type="int" />
         </EntityType>
         <EntityType Name="UsersInRoles">
           <Key>
@@ -139,6 +165,18 @@
           <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
         </EntityType>
+        <Association Name="FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id">
+          <End Role="ActionDefinition" Type="NkjSoft.Model.Store.ActionDefinition" Multiplicity="0..1" />
+          <End Role="ActionDefinition1" Type="NkjSoft.Model.Store.ActionDefinition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionDefinition">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ActionDefinition1">
+              <PropertyRef Name="ParentNode_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_dbo_LoginLogs_dbo_Users_Member_UserId">
           <End Role="Users" Type="NkjSoft.Model.Store.Users" Multiplicity="0..1" />
           <End Role="LoginLogs" Type="NkjSoft.Model.Store.LoginLogs" Multiplicity="*" />
@@ -280,6 +318,11 @@
             <End Role="Users" EntitySet="Users" />
             <End Role="LoginLogs" EntitySet="LoginLogs" />
           </AssociationSet>
+          <EntitySet Name="ActionDefinition" EntityType="NkjSoft.Model.ActionDefinition" />
+          <AssociationSet Name="FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id" Association="NkjSoft.Model.FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id">
+            <End Role="ActionDefinition" EntitySet="ActionDefinition" />
+            <End Role="ActionDefinition1" EntitySet="ActionDefinition" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Applications">
           <Key>
@@ -291,8 +334,9 @@
           <NavigationProperty Name="Memberships" Relationship="NkjSoft.Model.MembershipApplication" FromRole="Applications" ToRole="Memberships" />
           <NavigationProperty Name="Roles" Relationship="NkjSoft.Model.RoleApplication" FromRole="Applications" ToRole="Roles" />
           <NavigationProperty Name="Users" Relationship="NkjSoft.Model.UserApplication" FromRole="Applications" ToRole="Users" />
-          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" />
           <Property Type="DateTime" Name="AddDate" Precision="3" />
+          <Property Type="Int32" Name="Status" />
         </EntityType>
         <EntityType Name="Memberships">
           <Key>
@@ -319,8 +363,9 @@
           <Property Name="Comment" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="Applications" Relationship="NkjSoft.Model.MembershipApplication" FromRole="Memberships" ToRole="Applications" />
           <NavigationProperty Name="Users" Relationship="NkjSoft.Model.MembershipUser" FromRole="Memberships" ToRole="Users" />
-          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" />
           <Property Type="DateTime" Name="AddDate" Precision="3" />
+          <Property Type="Int32" Name="Status" />
         </EntityType>
         <EntityType Name="Menu">
           <Key>
@@ -356,8 +401,9 @@
           <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="County" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Street" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" />
           <Property Type="DateTime" Name="AddDate" Precision="3" />
+          <Property Type="Int32" Name="Status" />
         </EntityType>
         <EntityType Name="Roles">
           <Key>
@@ -369,8 +415,9 @@
           <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="Applications" Relationship="NkjSoft.Model.RoleApplication" FromRole="Roles" ToRole="Applications" />
           <NavigationProperty Name="Users" Relationship="NkjSoft.Model.UsersInRoles" FromRole="Roles" ToRole="Users" />
-          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" />
           <Property Type="DateTime" Name="AddDate" Precision="3" />
+          <Property Type="Int32" Name="Status" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -385,9 +432,10 @@
           <NavigationProperty Name="Memberships" Relationship="NkjSoft.Model.MembershipUser" FromRole="Users" ToRole="Memberships" />
           <NavigationProperty Name="Profiles" Relationship="NkjSoft.Model.UserProfile" FromRole="Users" ToRole="Profiles" />
           <NavigationProperty Name="Roles" Relationship="NkjSoft.Model.UsersInRoles" FromRole="Users" ToRole="Roles" />
-          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" />
           <Property Type="DateTime" Name="AddDate" Precision="3" />
           <NavigationProperty Name="LoginLogs" Relationship="NkjSoft.Model.FK_dbo_LoginLogs_dbo_Users_Member_UserId" FromRole="Users" ToRole="LoginLogs" />
+          <Property Type="Int32" Name="Status" />
         </EntityType>
         <Association Name="MembershipApplication">
           <End Role="Applications" Type="NkjSoft.Model.Applications" Multiplicity="1" />
@@ -459,10 +507,11 @@
           </Key>
           <Property Type="Guid" Name="Id" Nullable="false" />
           <Property Type="String" Name="IpAddress" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
-          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" />
           <Property Type="DateTime" Name="AddDate" Precision="3" />
           <Property Type="Guid" Name="Member_UserId" />
           <NavigationProperty Name="Users" Relationship="NkjSoft.Model.FK_dbo_LoginLogs_dbo_Users_Member_UserId" FromRole="LoginLogs" ToRole="Users" />
+          <Property Type="Int32" Name="Status" />
         </EntityType>
         <Association Name="FK_dbo_LoginLogs_dbo_Users_Member_UserId">
           <End Type="NkjSoft.Model.Users" Role="Users" Multiplicity="0..1" />
@@ -476,6 +525,39 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="ActionDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Text" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Area" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ActionName" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Controller" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Url" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Icon" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ShowAsMenu" Nullable="false" />
+          <Property Type="String" Name="Style" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="DateTime" Name="AddDate" Precision="3" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="Guid" Name="ParentNode_Id" />
+          <NavigationProperty Name="ActionDefinition1" Relationship="NkjSoft.Model.FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id" FromRole="ActionDefinition" ToRole="ActionDefinition1" />
+          <NavigationProperty Name="ActionDefinition2" Relationship="NkjSoft.Model.FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id" FromRole="ActionDefinition1" ToRole="ActionDefinition" />
+        </EntityType>
+        <Association Name="FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id">
+          <End Type="NkjSoft.Model.ActionDefinition" Role="ActionDefinition" Multiplicity="0..1" />
+          <End Type="NkjSoft.Model.ActionDefinition" Role="ActionDefinition1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionDefinition">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ActionDefinition1">
+              <PropertyRef Name="ParentNode_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -485,6 +567,7 @@
           <EntitySetMapping Name="Applications">
             <EntityTypeMapping TypeName="NkjSoft.Model.Applications">
               <MappingFragment StoreEntitySet="Applications">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="AddDate" ColumnName="AddDate" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
@@ -496,6 +579,7 @@
           <EntitySetMapping Name="Memberships">
             <EntityTypeMapping TypeName="NkjSoft.Model.Memberships">
               <MappingFragment StoreEntitySet="Memberships">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="AddDate" ColumnName="AddDate" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
@@ -523,12 +607,9 @@
           <EntitySetMapping Name="Profiles">
             <EntityTypeMapping TypeName="NkjSoft.Model.Profiles">
               <MappingFragment StoreEntitySet="Profiles">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="AddDate" ColumnName="AddDate" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
-                <ScalarProperty Name="Street" ColumnName="Street" />
-                <ScalarProperty Name="County" ColumnName="County" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="Province" ColumnName="Province" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
                 <ScalarProperty Name="PropertyValueStrings" ColumnName="PropertyValueStrings" />
@@ -540,6 +621,7 @@
           <EntitySetMapping Name="Roles">
             <EntityTypeMapping TypeName="NkjSoft.Model.Roles">
               <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="AddDate" ColumnName="AddDate" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
@@ -552,6 +634,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="NkjSoft.Model.Users">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="AddDate" ColumnName="AddDate" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
@@ -573,10 +656,31 @@
           <EntitySetMapping Name="LoginLogs">
             <EntityTypeMapping TypeName="NkjSoft.Model.LoginLogs">
               <MappingFragment StoreEntitySet="LoginLogs">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Member_UserId" ColumnName="Member_UserId" />
                 <ScalarProperty Name="AddDate" ColumnName="AddDate" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActionDefinition">
+            <EntityTypeMapping TypeName="NkjSoft.Model.ActionDefinition">
+              <MappingFragment StoreEntitySet="ActionDefinition">
+                <ScalarProperty Name="ParentNode_Id" ColumnName="ParentNode_Id" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="Style" ColumnName="Style" />
+                <ScalarProperty Name="ShowAsMenu" ColumnName="ShowAsMenu" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

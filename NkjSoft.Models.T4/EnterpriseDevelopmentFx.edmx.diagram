@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="NkjSoft.Model.Memberships" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
         <EntityTypeShape EntityType="NkjSoft.Model.Menu" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="NkjSoft.Model.MenusInRoles" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="NkjSoft.Model.Profiles" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NkjSoft.Model.Profiles" Width="1.5" PointX="9.5" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="NkjSoft.Model.Roles" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
         <EntityTypeShape EntityType="NkjSoft.Model.Users" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
         <AssociationConnector Association="NkjSoft.Model.MembershipApplication" ManuallyRouted="false" />
@@ -20,6 +20,8 @@
         <AssociationConnector Association="NkjSoft.Model.UsersInRoles" ManuallyRouted="false" />
         <EntityTypeShape EntityType="NkjSoft.Model.LoginLogs" Width="1.5" PointX="10.358049406836765" PointY="1.3163758820464722" />
         <AssociationConnector Association="NkjSoft.Model.FK_dbo_LoginLogs_dbo_Users_Member_UserId" />
+        <EntityTypeShape EntityType="NkjSoft.Model.ActionDefinition" Width="1.5" PointX="5.2790036337818034" PointY="8.12860636791615" />
+        <AssociationConnector Association="NkjSoft.Model.FK_dbo_ActionDefinition_dbo_ActionDefinition_ParentNode_Id" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

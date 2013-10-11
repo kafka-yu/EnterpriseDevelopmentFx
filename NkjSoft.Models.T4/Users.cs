@@ -26,8 +26,9 @@ namespace NkjSoft.Models.T4
         public string UserName { get; set; }
         public bool IsAnonymous { get; set; }
         public System.DateTime LastActivityDate { get; set; }
-        public bool IsDeleted { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> AddDate { get; set; }
+        public Nullable<int> Status { get; set; }
     
         public virtual Applications Applications { get; set; }
         public virtual Memberships Memberships { get; set; }
