@@ -20,8 +20,7 @@ namespace NkjSoft.Core.Models.Business
         /// <summary>
         /// 地址
         /// </summary>
-        [ComplexType()]
-        public Region Address { get; set; }
+        public Address Address { get; set; }
 
         public string Introduction { get; set; }
 
@@ -30,7 +29,6 @@ namespace NkjSoft.Core.Models.Business
         /// <summary>
         /// 联系方式
         /// </summary>
-        [ComplexType]
         public ContactInfo ContactInfo { get; set; }
 
         /// <summary>
@@ -42,7 +40,5 @@ namespace NkjSoft.Core.Models.Business
         /// 证书。
         /// </summary>
         public ICollection<Certificate> Certificates { get; set; }
-
-
     }
 }

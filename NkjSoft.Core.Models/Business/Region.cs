@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
 namespace NkjSoft.Core.Models.Business
 {
-    public class Region
+    [ComplexType()]
+    public class Address
     {
         /// <summary>
         /// 国家
@@ -30,6 +32,6 @@ namespace NkjSoft.Core.Models.Business
         /// <summary>
         /// 地址
         /// </summary>
-        public string Address { get; set; }
+        public string Detail { get; set; }
     }
 }
