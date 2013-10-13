@@ -23,7 +23,7 @@ namespace NkjSoft.Models.T4
     {
         public ActionDefinition_Mapping()
         {                        
-              this.HasKey(t => t.Id);        
+              this.HasKey(t => t.Id);
               this.ToTable("ActionDefinition");
               this.Property(t => t.Id).HasColumnName("Id");
               this.Property(t => t.Text).HasColumnName("Text");
@@ -58,7 +58,7 @@ namespace NkjSoft.Models.T4
     {
         public Applications_Mapping()
         {                        
-              this.HasKey(t => t.ApplicationId);        
+              this.HasKey(t => t.ApplicationId);
               this.ToTable("Applications");
               this.Property(t => t.ApplicationName).HasColumnName("ApplicationName").IsRequired().HasMaxLength(235);
               this.Property(t => t.ApplicationId).HasColumnName("ApplicationId");
@@ -84,7 +84,7 @@ namespace NkjSoft.Models.T4
     {
         public LoginLogs_Mapping()
         {                        
-              this.HasKey(t => t.Id);        
+              this.HasKey(t => t.Id);
               this.ToTable("LoginLogs");
               this.Property(t => t.Id).HasColumnName("Id");
               this.Property(t => t.IpAddress).HasColumnName("IpAddress").IsRequired().HasMaxLength(15);
@@ -111,7 +111,7 @@ namespace NkjSoft.Models.T4
     {
         public Memberships_Mapping()
         {                        
-              this.HasKey(t => t.UserId);        
+              this.HasKey(t => t.UserId);
               this.ToTable("Memberships");
               this.Property(t => t.ApplicationId).HasColumnName("ApplicationId");
               this.Property(t => t.UserId).HasColumnName("UserId");
@@ -155,4 +155,4 @@ namespace NkjSoft.Models.T4
     {
         public Menu_Mapping()
         {                        
-              this.HasKey(t => t.Id);        
+              this.HasKey(t => t.Id);

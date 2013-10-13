@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head id="MyHead" runat="server">
+    <script src="<%: Url.Content("~/Scripts/jquery.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/JScriptCommon.js") %>" type="text/javascript"></script>
+    <link href="<%: Url.Content("~/Content/StyleSheet.css") %>" rel="stylesheet" type="text/css" />
+    <script src="<%: Url.Content("~/Scripts/jquery.validate.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js") %>"
+        type="text/javascript"></script>
+    <script src="/Admin/../Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Res/easyui/jquery.easyui.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Res/easyui/locale/easyui-lang-zh_CN.js") %>" type="text/javascript"></script>
+    <link href="<%: Url.Content("~/Res/easyui/themes/icon.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%: Url.Content("~/Res/easyui/themes/metro/easyui.css") %>" rel="stylesheet"
+        type="text/css" />
+    <title></title>
+    <%--在1.2版本中修改--%>
+    <style type="text/css">
+        .combo   
+        {
+            font-family: 微软雅黑,新宋体;
+            height: 24px;
+            width: 210px;
+            border: 1px solid #CCC;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type='text/javascript'>
+        function ajaxFrom(form, url) {
+
+            $.ajax({
+                url: url,
+                type: "Post",
+                data: $(form).serialize(),
+                dataType: "json",
+                success: function (data) {
+                    if ($.messager) {
+                        $.messager.defaults.ok = '继续';
+                        $.messager.defaults.cancel = '返回';
+
+                        $.messager.confirm('操作提示', data, function (r) {
+                            if (!r) {
+                                window.location.href = 'javascript:history.go(-1)';
+                            }
+                        });
+                    }
+
+                }
+            });
+
+        }
+
+        $(function () {
+
+            $("form").submit(function (form) {
+                if (form.result) {
+                    ajaxFrom(this, this.action);
+                }
+                return false;
+            });
+            //按钮样式
+             $('.a2').mouseover(function () { this.style.color = "#ae1121"; }).mouseout(function () { this.style.color = "#333"; });
+
+        });
+    </script>
+</head>
+<body onload="loadpage()">
+    <div class="mbx">
+        <asp:ContentPlaceHolder ID="CurentPlace" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <% using (Html.BeginForm())
+       { %>
+    <%: Html.ValidationSummary(true) %>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <% } %>
+</body>
+</html>

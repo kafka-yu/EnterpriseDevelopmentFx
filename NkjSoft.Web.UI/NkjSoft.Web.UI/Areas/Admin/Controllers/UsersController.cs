@@ -70,15 +70,7 @@ namespace NkjSoft.Web.UI.Areas.Admin.Controllers
 
             var data = repo.GetType();
 
-            var tt = repo.Entities
-            .Select(p => new
-            {
-                ApplicationId = p.ApplicationId,
-                UserId = p.UserId,
-                Email = p.Memberships.Email,
-                Name = p.UserName
-            })
-            .ToList();
+            var tt = new[] { repo.Entities.FirstOrDefault() };
             var count = repo.Entities.Count();
 
             //var tt = repo.Set<ActionDefinition>()

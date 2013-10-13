@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head id="MyHead" runat="server">
+    <link href="<%: Url.Content("~/Content/StyleSheet.css") %>" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .textarea-box textarea
+        {
+          
+            color: #333;
+        }
+        .display-label
+        {
+            width: 120px;
+            height: 24px;
+            float: left;
+            text-align: right;
+            margin: 11px 0;
+            line-height: 24px;
+            
+        }
+        /*<%--font-weight: bold;
+            color: #333;--%>*/
+        .display-field
+        {
+            height: 24px;
+            float: left;
+            margin: 11px 0 11px 6px;
+            color: #333;
+            width: 290px;
+            text-align: left;
+            display: inline;
+            line-height: 24px;
+        }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="mbx">
+        <asp:ContentPlaceHolder ID="CurentPlace" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

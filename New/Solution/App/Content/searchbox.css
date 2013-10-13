@@ -1,0 +1,12 @@
+﻿.search-panel ul li {
+    margin: 0;
+    display: inline-block;
+}
+
+.search-panel ul:first-child {
+    padding-left: 0px;
+}
+
+.search-panel input[type='text'] {
+    min-width: 180px;
+}

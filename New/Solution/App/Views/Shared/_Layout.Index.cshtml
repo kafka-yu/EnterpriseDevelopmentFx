@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head id="MyHead" runat="server">
+    
+   
+    <link href="@Url.Content("~/Res/easyui/themes/metro/easyui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Res/easyui/themes/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/StyleSheet.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/easyui.metro.modify.css")" rel="stylesheet" />
+    
+    <link href="@Url.Content("~/Content/searchbox.css")" rel="stylesheet" type="text/css" />
+
+     <script src="@Url.Content("~/Scripts/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.json-2.4.min.js")" type="text/javascript"></script>
+    
+    <script src="@Url.Content("~/Res/easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Res/easyui/locale/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/JScriptCommon.js") " type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/SearchBoxBackend.js")" type="text/javascript"></script>
+
+    <title>
+        @RenderSection("TitleContent", false)
+    </title>
+
+    @RenderSection("HeadContent", false)
+
+    <script type="text/javascript" language="javascript">
+        $(function () {
+            //查询按钮样式
+            $('.submitcss').mouseover(function () { this.style.background = 'rgb(113,4,4)'; }).mouseout(function () { this.style.background = 'rgb(131,0,0)'; });
+
+        });
+    </script>
+</head>
+<body onload="loadpage()">
+    @RenderBody()
+    <div id="dialo" title="操作">
+    </div>
+    
+    <table id="flexigridData">
+    </table>   <div id="myWindow">
+    </div>
+</body>
+</html>

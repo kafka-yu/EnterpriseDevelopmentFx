@@ -1,0 +1,75 @@
+﻿@model NkjSoft.DAL.Business.ArticleType
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layout.Index.cshtml";
+}
+
+@section TitleContent{
+    <h1>类型列表</h1>
+    }
+
+<div class="search-panel" style="margin-bottom: 10px">
+    <div id="divQuery" class="control-list">
+        <div class="input_search">
+            @Html.LabelFor(p=>p.Name)
+            <input type='text' id='Name' />
+        </div>
+        <a href="javascript:void(0);"  class="l-btn search-button easyui-linkbutton easyui-linkbutton-blue" data-options="">查 询</a>
+    </div>
+</div>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+ *@
+
+<table id="datagrid" 
+        singleSelect="false" title="" url="@Url.Action("GetArticleTypeListJson", "ArticleType")" >
+</table>
+
+<script type="text/javascript">
+
+    function _initGrid() {
+        initialDataGrid([[
+            { field: 'Name', title: '@Html.DisplayNameFor(model => model.Name)', width: 200 },
+           { field: 'Description', title: '@Html.DisplayNameFor(model => model.Description)', width: 200 },
+           { field: 'AddDate', title: '@Html.DisplayNameFor(model => model.AddDate)', width: 300 }
+        ]], { multipleSelect: true });
+    }
+
+    $(function () {
+
+
+        $(".removeBtn").live("click", function (e) {
+            alert("ads");
+        });
+    });
+
+    function buildParams(param) {
+        buildUpParams(param);
+    }
+
+    function _DoSearch2() {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetArticleTypeListJson", "ArticleType")",
+            data: {
+                page: 1,
+                rows: 5
+            },
+            dataType: "json",
+            traditional: true,
+            success: function (e) {
+                alert($.toJSON(e));
+            },
+            error: function (e) {
+                alert($.toJSON(e));
+            }
+        });
+    }
+
+    function flexiQuery() {
+    }
+
+</script>

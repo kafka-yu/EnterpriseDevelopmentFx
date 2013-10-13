@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "TestRazor";
+    Layout = "~/Areas/Admin/Views/Shared/Backend.Layout.Common.cshtml";
+}
+
+@model NkjSoft.DAL.Business.Article
+
+@section CurrentPlace{
+    <span>首页</span>
+} 
+ 
+<h1>Title</h1>
+<span>@Model.Title</span>
+<h3>@Model.Category.Name</h3>
+
+
+<h2>Content</h2>
+<p>
+    @Model.Content
+</p>
+
+<span>View Count : @Model.ViewCount</span>
